@@ -242,7 +242,7 @@ const Home = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://nishantharadhya-website.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
