@@ -239,12 +239,14 @@ const Home = () => {
       return;
     }
 
-    // Open email client with pre-filled message
+    // Open Gmail compose in new tab
+    const to = 'aradhyanishanth84@gmail.com';
     const subject = encodeURIComponent(`Contact from ${formData.name}`);
     const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
-    window.location.href = `mailto:aradhyanishanth84@gmail.com?subject=${subject}&body=${body}`;
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
+    window.open(gmailUrl, '_blank');
 
-    toast.success('Opening your email app...', {
+    toast.success('Opening Gmail to send your message...', {
       icon: <CheckCircle size={20} />,
     });
 
