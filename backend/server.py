@@ -66,6 +66,53 @@ async def get_status_checks():
     
     return status_checks
 
+
+# Contact Form Models
+class ContactMessage(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+    
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    email: str
+    message: str
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+class ContactMessageCreate(BaseModel):
+    name: str
+    email: str
+    message: str
+
+
+# Contact Form Endpoint
+@api_router.post("/contact", response_model=ContactMessage)
+async def submit_contact_form(input: ContactMessageCreate):
+    """Handle contact form submissions"""
+    contact_dict = input.model_dump()
+    contact_obj = ContactMessage(**contact_dict)
+    
+    # Convert to dict and serialize datetime to ISO string for MongoDB
+    doc = contact_obj.model_dump()
+    doc['timestamp'] = doc['timestamp'].isoformat()
+    
+    # Store in MongoDB
+    await db.contact_messages.insert_one(doc)
+    
+    logger.info(f"New contact message from {input.name} ({input.email})")
+    
+    return contact_obj
+
+
+@api_router.get("/contact", response_model=List[ContactMessage])
+async def get_contact_messages():
+    """Get all contact messages (for admin purposes)"""
+    messages = await db.contact_messages.find({}, {"_id": 0}).to_list(1000)
+    
+    for msg in messages:
+        if isinstance(msg['timestamp'], str):
+            msg['timestamp'] = datetime.fromisoformat(msg['timestamp'])
+    
+    return messages
+
 # Include the router in the main app
 app.include_router(api_router)
 
