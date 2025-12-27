@@ -239,34 +239,16 @@ const Home = () => {
       return;
     }
 
-    setIsSubmitting(true);
+    // Open email client with pre-filled message
+    const subject = encodeURIComponent(`Contact from ${formData.name}`);
+    const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
+    window.location.href = `mailto:aradhyanishanth84@gmail.com?subject=${subject}&body=${body}`;
 
-    try {
-      const response = await fetch('https://nishantharadhya-website.onrender.com/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+    toast.success('Opening your email app...', {
+      icon: <CheckCircle size={20} />,
+    });
 
-      if (!response.ok) {
-        throw new Error('Failed to send message');
-      }
-
-      toast.success('Message sent successfully! We\'ll get back to you soon.', {
-        icon: <CheckCircle size={20} />,
-      });
-
-      setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      toast.error('Failed to send message. Please try again later.', {
-        icon: <AlertCircle size={20} />,
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    setFormData({ name: '', email: '', message: '' });
   };
 
   const handleSplineLoad = () => {
