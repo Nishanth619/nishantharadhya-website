@@ -185,7 +185,6 @@
     font-size: 14px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .terms-title-section h1 {
         font-size: 1.8rem;
@@ -201,5 +200,115 @@
 
     .terms-section h2 {
         font-size: 1.25rem;
+    }
+}
+
+/* Highlight Box */
+.highlight-box {
+    background: rgba(0, 255, 209, 0.08);
+    border: 1px solid rgba(0, 255, 209, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px 0;
+}
+
+.highlight-box p {
+    margin-bottom: 12px;
+}
+
+.highlight-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Warning Box */
+.warning-box {
+    background: rgba(255, 152, 0, 0.1);
+    border: 1px solid rgba(255, 152, 0, 0.3);
+    border-left: 4px solid #ff9800;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.warning-box p {
+    margin-bottom: 0;
+    color: var(--text-secondary);
+}
+
+.warning-box h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* Danger Box */
+.danger-box {
+    background: rgba(244, 67, 54, 0.1);
+    border: 1px solid rgba(244, 67, 54, 0.3);
+    border-left: 4px solid #f44336;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.danger-box h3 {
+    color: #f44336;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.danger-box p {
+    color: var(--text-secondary);
+}
+
+.danger-box ul {
+    margin-bottom: 12px;
+}
+
+/* Permissions Table */
+.permissions-table {
+    overflow-x: auto;
+    margin: 16px 0;
+}
+
+.permissions-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.permissions-table th,
+.permissions-table td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.permissions-table th {
+    background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+    color: #000;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.permissions-table td {
+    background: var(--card-bg);
+    color: var(--text-secondary);
+}
+
+.permissions-table tr:last-child td {
+    border-bottom: none;
+}
+
+.permissions-table tr:hover td {
+    background: rgba(0, 255, 209, 0.05);
+}
+
+@media (max-width: 768px) {
+
+    .permissions-table th,
+    .permissions-table td {
+        padding: 10px 12px;
+        font-size: 0.85rem;
     }
 }
