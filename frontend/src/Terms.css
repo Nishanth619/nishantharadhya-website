@@ -6,6 +6,7 @@
     color: var(--text-primary);
     padding: 0;
     transition: background 0.3s ease, color 0.3s ease;
+    overflow-y: auto;
 }
 
 .terms-header {
@@ -13,9 +14,6 @@
     backdrop-filter: blur(20px);
     padding: 24px 7.6923%;
     border-bottom: 1px solid var(--border-subtle);
-    position: sticky;
-    top: 0;
-    z-index: 100;
 }
 
 .back-button {
