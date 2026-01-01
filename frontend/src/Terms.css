@@ -167,6 +167,13 @@
     margin-top: 16px;
 }
 
+/* Override Home.css scroll reveal that sets opacity: 0 */
+.terms-container .contact-section,
+.terms-container .terms-section {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
 .contact-info p {
     margin-bottom: 8px;
 }
