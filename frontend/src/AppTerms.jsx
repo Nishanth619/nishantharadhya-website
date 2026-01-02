@@ -48,7 +48,7 @@ const appData = {
     neartransfer: {
         name: "NearTransfer",
         icon: "📲",
-        description: "file sharing application that enables users to transfer files between devices on the same local WiFi network",
+        description: "cross-platform file sharing application that enables seamless file transfers between Android and Windows devices over the same WiFi network",
         isDetailed: true
     },
     novacraft: {
@@ -107,7 +107,7 @@ const NearTransferTerms = ({ navigate }) => {
                         <FileText size={24} />
                     </div>
                     <h2>2. Description of Service</h2>
-                    <p>NearTransfer is a file sharing application that provides the following features:</p>
+                    <p>NearTransfer is a cross-platform file sharing application that provides the following features:</p>
 
                     <h3>2.1 Core Features</h3>
                     <ul>

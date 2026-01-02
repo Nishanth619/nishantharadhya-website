@@ -52,7 +52,7 @@ const appData = {
     neartransfer: {
         name: "NearTransfer",
         icon: "📲",
-        description: "file sharing application that enables users to transfer files between devices on the same local WiFi network",
+        description: "cross-platform file sharing application that enables seamless file transfers between Android and Windows devices over the same WiFi network",
         isDetailed: true
     },
     novacraft: {
@@ -103,9 +103,7 @@ const NearTransferPrivacy = ({ navigate }) => {
                     </div>
                     <h2>1. App Overview</h2>
                     <p>
-                        NearTransfer is a file sharing application that enables users to transfer files between devices on the same local
-                        WiFi network. The App operates primarily offline and does not require cloud storage or external servers for file
-                        transfers.
+                        NearTransfer is a cross-platform file sharing application that enables seamless file transfers between Android and Windows devices over the same WiFi network. Share files from phone to PC, PC to phone, or between devices of the same platform — all without requiring internet or cloud storage.
                     </p>
                 </section>
 
