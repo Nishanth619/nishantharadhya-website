@@ -19,11 +19,7 @@ const appData = {
         name: "PDF Gen",
         icon: "📄",
         description: "PDF creation and conversion application",
-        features: [
-            "Document conversion happens entirely on your device",
-            "We do not upload or store your files on any server",
-            "Generated PDFs remain completely private"
-        ]
+        isDetailed: true
     },
     smartzip: {
         name: "SmartZip",
@@ -415,6 +411,200 @@ const NearTransferTerms = ({ navigate }) => {
     );
 };
 
+// Detailed PDFGen Terms and Conditions Component
+const PDFGenTerms = ({ navigate }) => {
+    return (
+        <div className="terms-container" data-theme="dark">
+            <div className="terms-header">
+                <button className="back-button" onClick={() => navigate('/')}>
+                    <ArrowLeft size={20} />
+                    <span>Back to Home</span>
+                </button>
+                <div className="terms-title-section">
+                    <FileText className="terms-icon" size={40} />
+                    <h1>📄 PDFGen - Terms and Conditions</h1>
+                    <p className="last-updated">Last Updated: January 7, 2026</p>
+                </div>
+            </div>
+
+            <div className="terms-content">
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Shield size={24} />
+                    </div>
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>
+                        By downloading, installing, or using the PDFGen mobile application ("App"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, please do not use the App.
+                    </p>
+                    <p>The App is developed and published by the PDFGen app developer.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <FileText size={24} />
+                    </div>
+                    <h2>2. Description of Service</h2>
+                    <p>PDFGen is a mobile application that provides the following services:</p>
+                    <ul>
+                        <li>Convert images to PDF documents</li>
+                        <li>Scan documents using your device camera</li>
+                        <li>Extract text from images using OCR (Optical Character Recognition)</li>
+                        <li>Add password protection to PDF files</li>
+                        <li>Add digital signatures to PDF documents</li>
+                        <li>Add watermarks to PDF files</li>
+                        <li>Split and merge PDF documents</li>
+                        <li>Create ID/passport photos</li>
+                        <li>Scan business cards and save contacts</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Scale size={24} />
+                    </div>
+                    <h2>3. License Grant</h2>
+                    <p>
+                        Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to download, install, and use the App for personal or professional document management purposes.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>4. User Responsibilities</h2>
+                    <p>When using the App, you agree to:</p>
+                    <ul>
+                        <li>Use the App in compliance with all applicable laws and regulations</li>
+                        <li>Not use the App for any illegal, harmful, or unauthorized purposes</li>
+                        <li>Not attempt to reverse engineer, decompile, or modify the App</li>
+                        <li>Not use the App to create, distribute, or store any illegal or infringing content</li>
+                        <li>Take responsibility for the content of documents you create</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <h2>5. User Content</h2>
+                    <p>
+                        You retain all rights to the PDF files, images, and documents you create using the App. We do not claim any ownership rights to your content.
+                    </p>
+                    <p>
+                        All your documents are stored locally on your device. We do not upload, access, or store your files on any external servers.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>6. In-App Purchases and Subscriptions</h2>
+                    <p>
+                        The App may offer premium features through in-app purchases. All purchases are processed through Google Play and are subject to Google Play's terms of service.
+                    </p>
+                    <ul>
+                        <li>Prices are displayed in your local currency before purchase</li>
+                        <li>Purchases are non-refundable except as required by applicable law</li>
+                        <li>Premium features are tied to your Google account</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <h2>7. Advertisements</h2>
+                    <p>
+                        The free version of the App displays advertisements provided by Google AdMob. Advertisements may be personalized or non-personalized depending on user consent, device settings, and applicable laws.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>8. Intellectual Property</h2>
+                    <p>
+                        The App and its original content, features, and functionality are owned by PDFGen and are protected by international copyright, trademark, and other intellectual property laws.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <AlertCircle size={24} />
+                    </div>
+                    <h2>9. Disclaimer of Warranties</h2>
+                    <div className="warning-box">
+                        <p>
+                            THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.
+                        </p>
+                    </div>
+                </section>
+
+                <section className="terms-section">
+                    <h2>10. Limitation of Liability</h2>
+                    <div className="warning-box">
+                        <p>
+                            TO THE MAXIMUM EXTENT PERMITTED BY LAW, PDFGEN SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE APP, INCLUDING BUT NOT LIMITED TO:
+                        </p>
+                        <ul>
+                            <li>Loss of data or documents</li>
+                            <li>Loss of profits or business opportunities</li>
+                            <li>Any unauthorized access to your device</li>
+                            <li>Any errors or omissions in the App's functionality</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section className="terms-section">
+                    <h2>11. No Professional Advice</h2>
+                    <p>
+                        The App is provided for general document management purposes only. PDFGen does not provide legal, financial, or professional advice. Users are responsible for verifying the accuracy and suitability of documents created using the App.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>12. Modifications to the App</h2>
+                    <p>
+                        We reserve the right to modify, suspend, or discontinue the App at any time without notice. We will not be liable for any modification, suspension, or discontinuance of the App.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>13. Changes to Terms</h2>
+                    <p>
+                        We reserve the right to modify these Terms at any time. We will notify users of significant changes through the App or by updating the "Last Updated" date. Continued use of the App after changes constitutes acceptance of the new Terms.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>14. Governing Law</h2>
+                    <p>
+                        These Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts in India.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>15. Severability</h2>
+                    <p>
+                        If any provision of these Terms is found to be unenforceable, the remaining provisions will continue to be valid and enforceable.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>16. Entire Agreement</h2>
+                    <p>
+                        These Terms, together with our Privacy Policy, constitute the entire agreement between you and PDFGen regarding the use of the App.
+                    </p>
+                </section>
+
+                <section className="terms-section contact-section">
+                    <div className="section-icon">
+                        <Mail size={24} />
+                    </div>
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions about these Terms and Conditions, please contact us:</p>
+                    <div className="contact-info">
+                        <p><strong>Email:</strong> pdfgen09@gmail.com</p>
+                        <p><strong>Developer:</strong> PDFGen</p>
+                    </div>
+                </section>
+            </div>
+
+            <div className="terms-footer">
+                <p>© 2026 PDFGen. All rights reserved.</p>
+            </div>
+        </div>
+    );
+};
+
 const AppTerms = () => {
     const { appId } = useParams();
     const navigate = useNavigate();
@@ -423,6 +613,11 @@ const AppTerms = () => {
     // Use detailed NearTransfer terms
     if (appId === 'neartransfer') {
         return <NearTransferTerms navigate={navigate} />;
+    }
+
+    // Use detailed PDFGen terms
+    if (appId === 'pdfgen') {
+        return <PDFGenTerms navigate={navigate} />;
     }
 
     if (!app) {

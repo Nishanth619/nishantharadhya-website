@@ -20,12 +20,7 @@ const appData = {
         name: "PDF Gen",
         icon: "📄",
         description: "PDF creation and conversion application",
-        dataCollection: [
-            "No documents are uploaded to any server",
-            "All conversions happen locally on your device",
-            "Generated PDFs remain private on your device"
-        ],
-        permissions: ["Storage access to save generated PDFs", "Camera access for document scanning (optional)"]
+        isDetailed: true
     },
     smartzip: {
         name: "SmartZip",
@@ -367,6 +362,196 @@ const NearTransferPrivacy = ({ navigate }) => {
     );
 };
 
+// Detailed PDFGen Privacy Policy Component
+const PDFGenPrivacy = ({ navigate }) => {
+    return (
+        <div className="terms-container" data-theme="dark">
+            <div className="terms-header">
+                <button className="back-button" onClick={() => navigate('/')}>
+                    <ArrowLeft size={20} />
+                    <span>Back to Home</span>
+                </button>
+                <div className="terms-title-section">
+                    <Shield className="terms-icon" size={40} />
+                    <h1>📄 PDFGen - Privacy Policy</h1>
+                    <p className="last-updated">Last Updated: January 7, 2026</p>
+                </div>
+            </div>
+
+            <div className="terms-content">
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Shield size={24} />
+                    </div>
+                    <h2>Introduction</h2>
+                    <p>
+                        PDFGen ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application PDFGen (the "App").
+                    </p>
+                    <p>This app is developed and published by the PDFGen app developer.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Database size={24} />
+                    </div>
+                    <h2>Information We Collect</h2>
+
+                    <h3>Information You Provide</h3>
+                    <ul>
+                        <li><strong>PDF Files:</strong> Documents you create, edit, or manage using our app are stored locally on your device only.</li>
+                        <li><strong>Images:</strong> Photos you capture or select for PDF conversion are processed locally.</li>
+                        <li><strong>Contacts:</strong> When using Business Card Scanner, contact information is extracted via OCR and saved to your device contacts only with your permission.</li>
+                        <li><strong>Digital Signatures:</strong> Signature data you create is stored locally on your device.</li>
+                    </ul>
+
+                    <h3>Automatically Collected Information</h3>
+                    <ul>
+                        <li><strong>Device Information:</strong> Basic device type and operating system version for compatibility purposes.</li>
+                        <li><strong>Crash Reports:</strong> Anonymous crash data to improve app stability.</li>
+                        <li><strong>Ad Data:</strong> We use Google AdMob to display advertisements. AdMob may collect device identifiers and usage data as described in <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</li>
+                    </ul>
+
+                    <div className="highlight-box">
+                        <h3>Information We Do NOT Collect</h3>
+                        <ul>
+                            <li>We do NOT upload your PDF files to any server</li>
+                            <li>We do NOT collect personal identification information</li>
+                            <li>We do NOT track your location</li>
+                            <li>We do NOT access your files without your explicit action</li>
+                            <li>We do NOT share your documents with third parties</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Eye size={24} />
+                    </div>
+                    <h2>How We Use Your Information</h2>
+                    <ul>
+                        <li>To provide PDF conversion, scanning, and document management features</li>
+                        <li>To save contacts from scanned business cards (with your permission)</li>
+                        <li>To display advertisements via Google AdMob, which may be personalized or non-personalized based on user consent and region</li>
+                        <li>To improve app performance and fix bugs</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Lock size={24} />
+                    </div>
+                    <h2>Permissions We Request</h2>
+                    <div className="permissions-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Permission</th>
+                                    <th>Purpose</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Camera</td>
+                                    <td>Document scanning and photo capture</td>
+                                </tr>
+                                <tr>
+                                    <td>Storage/Photos</td>
+                                    <td>Import images and save PDF files</td>
+                                </tr>
+                                <tr>
+                                    <td>Contacts</td>
+                                    <td>Save scanned business card contacts (optional)</td>
+                                </tr>
+                                <tr>
+                                    <td>Internet</td>
+                                    <td>Display advertisements</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <ShieldCheck size={24} />
+                    </div>
+                    <h2>Data Storage and Security</h2>
+                    <p>
+                        All PDF files, images, and documents are stored <strong>locally on your device only</strong>. We do not upload or store your files on any external servers. Your data remains under your control at all times.
+                    </p>
+                    <p>
+                        We implement appropriate security measures including biometric authentication option to protect your documents.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Globe size={24} />
+                    </div>
+                    <h2>Third-Party Services</h2>
+                    <p>Our app uses the following third-party services:</p>
+                    <ul>
+                        <li><strong>Google AdMob:</strong> For displaying advertisements. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+                        <li><strong>Google ML Kit:</strong> For OCR text recognition and document scanning (processed on-device)</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Users size={24} />
+                    </div>
+                    <h2>Children's Privacy</h2>
+                    <p>
+                        Our app is not directed to children under 13 years of age. We do not knowingly collect personal information from children under 13.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>Your Rights</h2>
+                    <ul>
+                        <li>You can delete any PDF or document created by the app at any time</li>
+                        <li>You can revoke permissions through your device settings</li>
+                        <li>You can uninstall the app to remove all locally stored data</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <h2>Regional Privacy Rights</h2>
+                    <p>
+                        Depending on your location (such as the European Economic Area), you may have additional rights under data protection laws, including the right to access, correct, or delete your data. Since PDFGen does not store personal data on external servers, most data can be managed directly on your device.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Bell size={24} />
+                    </div>
+                    <h2>Changes to This Policy</h2>
+                    <p>
+                        We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this policy.
+                    </p>
+                </section>
+
+                <section className="terms-section contact-section">
+                    <div className="section-icon">
+                        <FileText size={24} />
+                    </div>
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                    <div className="contact-info">
+                        <p><strong>Email:</strong> pdfgen09@gmail.com</p>
+                        <p><strong>Developer:</strong> PDFGen</p>
+                    </div>
+                </section>
+            </div>
+
+            <div className="terms-footer">
+                <p>© 2026 PDFGen. All rights reserved.</p>
+            </div>
+        </div>
+    );
+};
+
 const AppPrivacy = () => {
     const { appId } = useParams();
     const navigate = useNavigate();
@@ -375,6 +560,11 @@ const AppPrivacy = () => {
     // Use detailed NearTransfer privacy policy
     if (appId === 'neartransfer') {
         return <NearTransferPrivacy navigate={navigate} />;
+    }
+
+    // Use detailed PDFGen privacy policy
+    if (appId === 'pdfgen') {
+        return <PDFGenPrivacy navigate={navigate} />;
     }
 
     if (!app) {
