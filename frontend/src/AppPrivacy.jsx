@@ -60,6 +60,12 @@ const appData = {
             "No cloud sync or upload features"
         ],
         permissions: ["Camera access for capturing frames", "Storage access to save animations"]
+    },
+    geocam: {
+        name: "Geocam Pro",
+        icon: "📸",
+        description: "Professional geo-tagged camera application",
+        isDetailed: true
     }
 };
 
@@ -552,6 +558,280 @@ const PDFGenPrivacy = ({ navigate }) => {
     );
 };
 
+// Detailed Geocam Privacy Policy Component
+const GeocamPrivacy = ({ navigate }) => {
+    return (
+        <div className="terms-container" data-theme="dark">
+            <div className="terms-header">
+                <button className="back-button" onClick={() => navigate('/')}>
+                    <ArrowLeft size={20} />
+                    <span>Back to Home</span>
+                </button>
+                <div className="terms-title-section">
+                    <Shield className="terms-icon" size={40} />
+                    <h1>📸 GEOCAM PRO - Privacy Policy</h1>
+                    <p className="last-updated">Effective Date: January 31, 2026 | Last Updated: January 31, 2026</p>
+                </div>
+            </div>
+
+            <div className="terms-content">
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Shield size={24} />
+                    </div>
+                    <h2>Introduction</h2>
+                    <p>
+                        Welcome to GEOCAM PRO ("we," "our," or "us"). We are committed to protecting your privacy and ensuring transparency about how we handle your data. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your personal data.
+                    </p>
+                    <p>
+                        By using GEOCAM PRO, you agree to the collection and use of information in accordance with this policy.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Database size={24} />
+                    </div>
+                    <h2>1. Information We Collect</h2>
+
+                    <h3>1.1 Location Data</h3>
+                    <ul>
+                        <li><strong>What We Collect:</strong> GPS coordinates, altitude, heading, and speed from your device's location sensors.</li>
+                        <li><strong>How We Collect It:</strong> Only when you actively use the app's camera or map features.</li>
+                        <li><strong>Purpose:</strong> To overlay accurate geographic data on your photos and display your position on the mini-map within the app.</li>
+                        <li><strong>Storage:</strong> All location data is stored exclusively on your device. We do not transmit, upload, or store location data on external servers.</li>
+                    </ul>
+
+                    <h3>1.2 Camera Access</h3>
+                    <ul>
+                        <li><strong>What We Collect:</strong> Access to your device's camera to capture photos.</li>
+                        <li><strong>Purpose:</strong> To enable the core functionality of taking geo-tagged photographs.</li>
+                        <li><strong>Storage:</strong> Photos are saved locally to your device's gallery or the app's dedicated album (Pictures/GEOCAM PRO).</li>
+                    </ul>
+
+                    <h3>1.3 Photo Metadata (EXIF Data)</h3>
+                    <ul>
+                        <li><strong>What We Collect:</strong> We embed GPS coordinates, altitude, timestamp, and other metadata into the EXIF data of photos you capture.</li>
+                        <li><strong>Purpose:</strong> To provide professional geo-tagged photos with accurate location information.</li>
+                        <li><strong>User Control:</strong> You can disable location tagging in the app settings. Metadata remains on your device and is only shared if you choose to export or share the photo.</li>
+                    </ul>
+
+                    <h3>1.4 Storage/Photos Access</h3>
+                    <ul>
+                        <li><strong>What We Collect:</strong> Permission to read and write photos to your device's storage.</li>
+                        <li><strong>Purpose:</strong> To save captured photos to your gallery and allow you to view/edit previously taken photos within the app.</li>
+                        <li><strong>Storage:</strong> All photos remain on your device. We do not access, upload, or transmit your photos to any external servers.</li>
+                    </ul>
+
+                    <h3>1.5 Device Information</h3>
+                    <ul>
+                        <li><strong>What We Collect:</strong> Device model, operating system version, app version, and crash logs (if the app crashes).</li>
+                        <li><strong>Purpose:</strong> To improve app performance, fix bugs, and ensure compatibility across devices.</li>
+                        <li><strong>Third-Party Services:</strong> Crash logs may be collected via Google Play Services for diagnostic purposes.</li>
+                    </ul>
+
+                    <h3>1.6 Weather Data</h3>
+                    <ul>
+                        <li><strong>What We Collect:</strong> Your current GPS coordinates are sent to the OpenWeather API to retrieve local weather information (temperature, conditions).</li>
+                        <li><strong>Purpose:</strong> To display weather data on your photo overlays.</li>
+                        <li><strong>Data Sharing:</strong> Only your coordinates are shared with OpenWeather. No personal identifiers (name, email, device ID) are transmitted.</li>
+                        <li><strong>Third-Party Policy:</strong> <a href="https://openweathermap.org/privacy-policy" target="_blank" rel="noopener noreferrer">OpenWeather Privacy Policy</a></li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Eye size={24} />
+                    </div>
+                    <h2>2. How We Use Your Information</h2>
+                    <p>We use the collected information solely for the following purposes:</p>
+                    <ul>
+                        <li><strong>Core Functionality:</strong> To capture, display, and save geo-tagged photos with accurate GPS data.</li>
+                        <li><strong>Map Display:</strong> To show your current location on the in-app mini-map and watermark overlays.</li>
+                        <li><strong>Weather Overlay:</strong> To fetch and display local weather information on your photos.</li>
+                        <li><strong>App Improvement:</strong> To analyze crash logs and performance metrics to improve stability and user experience.</li>
+                    </ul>
+
+                    <div className="highlight-box">
+                        <h3>We do NOT:</h3>
+                        <ul>
+                            <li>Sell, rent, or share your personal data with third parties for marketing purposes</li>
+                            <li>Upload your photos or location history to cloud servers</li>
+                            <li>Track your location when the app is not in use</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <ShieldCheck size={24} />
+                    </div>
+                    <h2>3. Data Storage and Security</h2>
+
+                    <h3>3.1 Local Storage</h3>
+                    <ul>
+                        <li>All photos, GPS data, and app settings are stored exclusively on your device.</li>
+                        <li>We do not have access to your data. We do not operate cloud servers or databases.</li>
+                    </ul>
+
+                    <h3>3.2 Data Security</h3>
+                    <ul>
+                        <li>Photos and metadata are protected by your device's built-in security features (encryption, lock screen, etc.).</li>
+                        <li>We implement industry-standard security practices within the app to prevent unauthorized access.</li>
+                    </ul>
+
+                    <h3>3.3 Data Retention</h3>
+                    <ul>
+                        <li>Data is retained on your device until you manually delete it (via the app's gallery, device storage settings, or uninstalling the app).</li>
+                        <li>Uninstalling the app will remove app-specific data, but photos saved to your device's public gallery (Pictures/GEOCAM PRO) will remain unless manually deleted.</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Globe size={24} />
+                    </div>
+                    <h2>4. Third-Party Services</h2>
+                    <p>We integrate the following third-party services:</p>
+
+                    <h3>4.1 Map Tiles</h3>
+                    <ul>
+                        <li><strong>Provider:</strong> OpenStreetMap / Mapbox</li>
+                        <li><strong>Data Shared:</strong> Map tile requests based on your current location (coordinates only).</li>
+                        <li><strong>Purpose:</strong> To display map backgrounds in the app's mini-map and watermark overlays.</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener noreferrer">OpenStreetMap Privacy</a> | <a href="https://www.mapbox.com/legal/privacy" target="_blank" rel="noopener noreferrer">Mapbox Privacy</a></li>
+                    </ul>
+
+                    <h3>4.2 Weather API</h3>
+                    <ul>
+                        <li><strong>Provider:</strong> OpenWeather</li>
+                        <li><strong>Data Shared:</strong> Your GPS coordinates to fetch local weather data.</li>
+                        <li><strong>Purpose:</strong> To display temperature and weather conditions on photo overlays.</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://openweathermap.org/privacy-policy" target="_blank" rel="noopener noreferrer">OpenWeather Privacy Policy</a></li>
+                    </ul>
+
+                    <h3>4.3 Google AdMob (Advertising)</h3>
+                    <ul>
+                        <li><strong>Provider:</strong> Google AdMob</li>
+                        <li><strong>Data Shared:</strong> Device advertising ID, app usage data, and approximate location (for ad targeting).</li>
+                        <li><strong>Purpose:</strong> To display banner and interstitial ads (free version only).</li>
+                        <li><strong>User Control:</strong> You can opt out of personalized ads via your device's privacy settings (Android: Settings &gt; Google &gt; Ads &gt; Opt out of Ads Personalization).</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google AdMob Privacy</a></li>
+                    </ul>
+
+                    <h3>4.4 Google Play Billing</h3>
+                    <ul>
+                        <li><strong>Provider:</strong> Google Play Store</li>
+                        <li><strong>Data Shared:</strong> Purchase information for premium subscriptions.</li>
+                        <li><strong>Purpose:</strong> To process in-app purchases and manage premium features.</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Privacy</a></li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Lock size={24} />
+                    </div>
+                    <h2>5. Your Rights (GDPR & CCPA Compliance)</h2>
+                    <p>We respect your privacy rights under international regulations, including GDPR (EU) and CCPA (California, USA).</p>
+
+                    <h3>5.1 Right to Access</h3>
+                    <p>You have the right to access all personal data stored by the app. Since all data is stored locally on your device, you can access it directly via the app's gallery and settings.</p>
+
+                    <h3>5.2 Right to Deletion</h3>
+                    <p>You can delete your data at any time by:</p>
+                    <ul>
+                        <li>Deleting individual photos from the app's gallery or device storage</li>
+                        <li>Clearing app data via your device settings (Settings &gt; Apps &gt; GEOCAM PRO &gt; Storage &gt; Clear Data)</li>
+                        <li>Uninstalling the app</li>
+                    </ul>
+
+                    <h3>5.3 Right to Opt-Out</h3>
+                    <ul>
+                        <li><strong>Location Services:</strong> You can disable location access at any time via your device settings (Settings &gt; Apps &gt; GEOCAM PRO &gt; Permissions &gt; Location &gt; Deny).</li>
+                        <li><strong>Personalized Ads:</strong> You can opt out of personalized advertising via your device's ad settings.</li>
+                    </ul>
+
+                    <h3>5.4 Right to Portability</h3>
+                    <p>You can export your photos and metadata at any time by sharing them via email, cloud storage, or other apps.</p>
+
+                    <h3>5.5 Right to Withdraw Consent</h3>
+                    <p>You can withdraw consent for any permission (camera, location, storage) at any time via your device settings. Note that withdrawing essential permissions may limit app functionality.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Users size={24} />
+                    </div>
+                    <h2>6. Children's Privacy</h2>
+                    <p>
+                        GEOCAM PRO is not intended for use by children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us, and we will take steps to delete such information.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>7. International Data Transfers</h2>
+                    <p>
+                        Since all data is stored locally on your device, there are no international data transfers. The only external data transmissions are:
+                    </p>
+                    <ul>
+                        <li>GPS coordinates to OpenWeather API (for weather data)</li>
+                        <li>Map tile requests to OpenStreetMap/Mapbox (for map display)</li>
+                        <li>Advertising data to Google AdMob (for ad serving)</li>
+                    </ul>
+                    <p>
+                        These services may process data in countries outside your region. Please review their respective privacy policies for details.
+                    </p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Bell size={24} />
+                    </div>
+                    <h2>8. Changes to This Privacy Policy</h2>
+                    <p>
+                        We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any material changes by:
+                    </p>
+                    <ul>
+                        <li>Displaying a notice within the app</li>
+                        <li>Updating the "Last Updated" date at the top of this policy</li>
+                    </ul>
+                    <p>
+                        Your continued use of the app after changes are posted constitutes your acceptance of the updated policy.
+                    </p>
+                </section>
+
+                <section className="terms-section contact-section">
+                    <div className="section-icon">
+                        <FileText size={24} />
+                    </div>
+                    <h2>9. Contact Us</h2>
+                    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:</p>
+                    <div className="contact-info">
+                        <p><strong>Email:</strong> nishantharadhya4@gmail.com</p>
+                        <p><strong>Website:</strong> <a href="https://www.nexaaradhya.site/" target="_blank" rel="noopener noreferrer">https://www.nexaaradhya.site/</a></p>
+                        <p><strong>Developer:</strong> Nishanth Aradhya AG</p>
+                    </div>
+                </section>
+
+                <section className="terms-section">
+                    <h2>10. Governing Law</h2>
+                    <p>
+                        This Privacy Policy is governed by the laws of India, without regard to its conflict of law provisions.
+                    </p>
+                    <p>
+                        By using GEOCAM PRO, you acknowledge that you have read, understood, and agree to this Privacy Policy.
+                    </p>
+                </section>
+            </div>
+
+            <div className="terms-footer">
+                <p>© 2026 GEOCAM PRO. All rights reserved.</p>
+            </div>
+        </div>
+    );
+};
+
 const AppPrivacy = () => {
     const { appId } = useParams();
     const navigate = useNavigate();
@@ -566,6 +846,12 @@ const AppPrivacy = () => {
     if (appId === 'pdfgen') {
         return <PDFGenPrivacy navigate={navigate} />;
     }
+
+    // Use detailed Geocam privacy policy
+    if (appId === 'geocam') {
+        return <GeocamPrivacy navigate={navigate} />;
+    }
+
 
     if (!app) {
         return (

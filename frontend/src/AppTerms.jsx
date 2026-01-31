@@ -56,6 +56,12 @@ const appData = {
             "We do not access or upload your creative content",
             "You retain all rights to animations you create"
         ]
+    },
+    geocam: {
+        name: "Geocam Pro",
+        icon: "📸",
+        description: "Professional geo-tagged camera application",
+        isDetailed: true
     }
 };
 
@@ -605,6 +611,302 @@ const PDFGenTerms = ({ navigate }) => {
     );
 };
 
+// Detailed Geocam Terms and Conditions Component
+const GeocamTerms = ({ navigate }) => {
+    return (
+        <div className="terms-container" data-theme="dark">
+            <div className="terms-header">
+                <button className="back-button" onClick={() => navigate('/')}>
+                    <ArrowLeft size={20} />
+                    <span>Back to Home</span>
+                </button>
+                <div className="terms-title-section">
+                    <FileText className="terms-icon" size={40} />
+                    <h1>📸 GEOCAM PRO - Terms and Conditions</h1>
+                    <p className="last-updated">Effective Date: January 31, 2026 | Last Updated: January 31, 2026</p>
+                </div>
+            </div>
+
+            <div className="terms-content">
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Shield size={24} />
+                    </div>
+                    <h2>Introduction</h2>
+                    <p>
+                        Welcome to GEOCAM PRO ("the App," "we," "our," or "us"). These Terms and Conditions ("Terms") govern your access to and use of the GEOCAM PRO mobile application. By downloading, installing, accessing, or using the App, you agree to be bound by these Terms.
+                    </p>
+                    <p>If you do not agree to these Terms, do not use the App.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>1. Acceptance of Terms</h2>
+
+                    <h3>1.1 Binding Agreement</h3>
+                    <p>By using GEOCAM PRO, you enter into a legally binding agreement with the App developer. These Terms apply to all users, including visitors, registered users, and premium subscribers.</p>
+
+                    <h3>1.2 Age Requirement</h3>
+                    <p>You must be at least 13 years of age to use this App. If you are under 18, you must have parental or guardian consent to use the App. By using the App, you represent and warrant that you meet these age requirements.</p>
+
+                    <h3>1.3 Updates to Terms</h3>
+                    <p>We reserve the right to modify these Terms at any time. We will notify you of material changes by:</p>
+                    <ul>
+                        <li>Displaying a notice within the App</li>
+                        <li>Updating the "Last Updated" date at the top of this document</li>
+                    </ul>
+                    <p>Your continued use of the App after changes are posted constitutes your acceptance of the updated Terms.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Scale size={24} />
+                    </div>
+                    <h2>2. License to Use</h2>
+
+                    <h3>2.1 Limited License</h3>
+                    <p>GEOCAM PRO grants you a limited, non-exclusive, non-transferable, revocable license to download, install, and use the App on your personal mobile device solely for your personal, non-commercial use.</p>
+
+                    <h3>2.2 Ownership</h3>
+                    <p>The App, including all content, features, functionality, software, code, design, graphics, and trademarks, is owned by the App developer and is protected by international copyright, trademark, and other intellectual property laws.</p>
+
+                    <h3>2.3 Restrictions</h3>
+                    <p>You agree NOT to:</p>
+                    <ul>
+                        <li>Copy, modify, distribute, sell, or lease any part of the App</li>
+                        <li>Reverse engineer, decompile, or disassemble the App</li>
+                        <li>Remove, alter, or obscure any copyright, trademark, or proprietary notices</li>
+                        <li>Use the App for any illegal, harmful, or unauthorized purpose</li>
+                        <li>Use automated bots, scripts, or tools to access or interact with the App</li>
+                        <li>Attempt to gain unauthorized access to the App's systems, servers, or networks</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <h2>3. User Responsibilities</h2>
+
+                    <h3>3.1 Account Security</h3>
+                    <p>If the App requires account creation in the future, you are responsible for:</p>
+                    <ul>
+                        <li>Providing accurate and complete information</li>
+                        <li>Maintaining the confidentiality of your account credentials</li>
+                        <li>All activities that occur under your account</li>
+                    </ul>
+
+                    <h3>3.2 Acceptable Use</h3>
+                    <p>You agree to use the App in compliance with all applicable laws and regulations. You will not:</p>
+                    <ul>
+                        <li>Upload, share, or transmit any content that is illegal, harmful, threatening, abusive, harassing, defamatory, obscene, or otherwise objectionable</li>
+                        <li>Violate the intellectual property rights of others</li>
+                        <li>Engage in any activity that disrupts or interferes with the App's functionality</li>
+                        <li>Use the App to collect or harvest personal information about other users</li>
+                    </ul>
+
+                    <h3>3.3 User-Generated Content</h3>
+                    <p>If you create or share content using the App (e.g., geo-tagged photos):</p>
+                    <ul>
+                        <li>You retain ownership of your content</li>
+                        <li>You are solely responsible for the content you create, including ensuring it does not violate any laws or third-party rights</li>
+                        <li>You grant us a non-exclusive, royalty-free license to use, display, and distribute your content solely for the purpose of providing App functionality (e.g., displaying photos in the in-app gallery)</li>
+                    </ul>
+
+                    <h3>3.4 Location Data Responsibility</h3>
+                    <p>You acknowledge that:</p>
+                    <ul>
+                        <li>GPS data accuracy depends on your device's hardware and environmental factors (e.g., satellite visibility, weather, terrain)</li>
+                        <li>We do not guarantee the accuracy, reliability, or completeness of GPS data</li>
+                        <li>You are solely responsible for verifying the accuracy of location data before relying on it for navigation, surveying, or any critical purpose</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <h2>4. Premium Features and Subscriptions</h2>
+
+                    <h3>4.1 Free vs. Premium</h3>
+                    <p>GEOCAM PRO offers both free and premium features:</p>
+                    <ul>
+                        <li><strong>Free Version:</strong> Includes core functionality with ads (banner and interstitial ads)</li>
+                        <li><strong>Premium Version:</strong> Unlocks advanced features (e.g., tactical map styles, custom templates, ad-free experience) via in-app purchase or subscription</li>
+                    </ul>
+
+                    <h3>4.2 Billing and Payment</h3>
+                    <ul>
+                        <li>Premium subscriptions are processed securely via Google Play Billing</li>
+                        <li>Subscriptions auto-renew unless canceled at least 24 hours before the end of the current billing period</li>
+                        <li>You can manage or cancel your subscription at any time via your Google Play account settings</li>
+                    </ul>
+
+                    <h3>4.3 Refunds</h3>
+                    <ul>
+                        <li>Refund policies are governed by Google Play's refund policy</li>
+                        <li>We do not provide direct refunds. Please contact Google Play support for refund requests</li>
+                    </ul>
+
+                    <h3>4.4 Changes to Pricing</h3>
+                    <p>We reserve the right to modify subscription pricing at any time. Price changes will apply to new subscriptions and renewals after the change is announced.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <AlertCircle size={24} />
+                    </div>
+                    <h2>5. Disclaimers and Limitations of Liability</h2>
+
+                    <h3>5.1 "AS IS" and "AS AVAILABLE" Basis</h3>
+                    <div className="warning-box">
+                        <p>GEOCAM PRO is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, either express or implied, including but not limited to:</p>
+                        <ul>
+                            <li>Warranties of merchantability, fitness for a particular purpose, or non-infringement</li>
+                            <li>Guarantees that the App will be error-free, uninterrupted, secure, or free from viruses or harmful components</li>
+                        </ul>
+                    </div>
+
+                    <h3>5.2 No Professional Advice</h3>
+                    <p>The App is for informational and recreational purposes only. It does not provide:</p>
+                    <ul>
+                        <li>Professional surveying, navigation, or mapping advice</li>
+                        <li>Medical, legal, financial, or other professional advice</li>
+                    </ul>
+                    <p>You should not rely solely on the App for critical decisions. Always verify information with professional sources.</p>
+
+                    <h3>5.3 GPS Accuracy Disclaimer</h3>
+                    <div className="warning-box">
+                        <ul>
+                            <li>GPS data accuracy depends on your device's hardware, satellite availability, and environmental conditions</li>
+                            <li>We do not guarantee the accuracy, precision, or reliability of GPS coordinates, altitude, or other location data</li>
+                            <li>Use GPS data at your own risk. We are not liable for any errors, inaccuracies, or consequences arising from reliance on GPS data</li>
+                        </ul>
+                    </div>
+
+                    <h3>5.4 Third-Party Services Disclaimer</h3>
+                    <p>The App integrates third-party services (e.g., OpenWeather, Mapbox, Google AdMob). We are not responsible for:</p>
+                    <ul>
+                        <li>The accuracy, availability, or reliability of third-party services</li>
+                        <li>Any changes, interruptions, or discontinuation of third-party services</li>
+                        <li>The privacy practices or content of third-party services (please review their respective privacy policies)</li>
+                    </ul>
+
+                    <h3>5.5 Limitation of Liability</h3>
+                    <div className="warning-box">
+                        <p>To the maximum extent permitted by law, we shall not be liable for any:</p>
+                        <ul>
+                            <li>Indirect, incidental, consequential, or punitive damages, including but not limited to loss of profits, data, or goodwill</li>
+                            <li>Direct damages exceeding the amount you paid for the App (if any) in the 12 months preceding the claim</li>
+                        </ul>
+                        <p>This limitation applies even if we have been advised of the possibility of such damages.</p>
+                    </div>
+
+                    <h3>5.6 Jurisdictional Limitations</h3>
+                    <p>Some jurisdictions do not allow the exclusion or limitation of certain warranties or liabilities. In such cases, the above limitations may not apply to you, and our liability will be limited to the maximum extent permitted by law.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>6. Intellectual Property</h2>
+
+                    <h3>6.1 Trademarks</h3>
+                    <p>"GEOCAM PRO," the GEOCAM PRO logo, and all related trademarks, service marks, and trade names are the property of the App developer. You may not use these marks without our prior written consent.</p>
+
+                    <h3>6.2 Copyright</h3>
+                    <p>All content within the App, including text, graphics, logos, icons, images, audio clips, and software, is the property of the App developer or its licensors and is protected by copyright laws.</p>
+
+                    <h3>6.3 User Content</h3>
+                    <p>You retain ownership of photos and content you create using the App. However, by using the App, you grant us a non-exclusive, royalty-free, worldwide license to use, display, and distribute your content solely for the purpose of providing App functionality.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>7. Privacy and Data Protection</h2>
+                    <p>Your privacy is important to us. Please review our <a href="/privacy/geocam">Privacy Policy</a> to understand how we collect, use, and protect your personal data.</p>
+                    <p>By using the App, you consent to the collection and use of information as described in the Privacy Policy.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>8. Termination</h2>
+
+                    <h3>8.1 Termination by You</h3>
+                    <p>You may stop using the App at any time by uninstalling it from your device.</p>
+
+                    <h3>8.2 Termination by Us</h3>
+                    <p>We reserve the right to suspend or terminate your access to the App at any time, without notice, for:</p>
+                    <ul>
+                        <li>Violation of these Terms</li>
+                        <li>Fraudulent, abusive, or illegal activity</li>
+                        <li>Any other reason at our sole discretion</li>
+                    </ul>
+
+                    <h3>8.3 Effect of Termination</h3>
+                    <p>Upon termination:</p>
+                    <ul>
+                        <li>Your license to use the App will immediately cease</li>
+                        <li>You must delete the App from your device</li>
+                        <li>All provisions of these Terms that by their nature should survive termination (e.g., disclaimers, limitations of liability, intellectual property rights) will remain in effect</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <h2>9. Governing Law and Dispute Resolution</h2>
+
+                    <h3>9.1 Governing Law</h3>
+                    <p>These Terms are governed by and construed in accordance with the laws of India, without regard to its conflict of law principles.</p>
+
+                    <h3>9.2 Dispute Resolution</h3>
+                    <p>Any disputes arising out of or relating to these Terms or the App shall be resolved through:</p>
+                    <ul>
+                        <li><strong>Informal Negotiation:</strong> We encourage you to contact us first to resolve disputes informally</li>
+                        <li><strong>Binding Arbitration:</strong> If informal resolution fails, disputes will be resolved through binding arbitration in accordance with applicable Indian arbitration laws</li>
+                        <li><strong>Class Action Waiver:</strong> You agree to resolve disputes on an individual basis and waive the right to participate in class actions or class arbitrations</li>
+                    </ul>
+
+                    <h3>9.3 Jurisdiction</h3>
+                    <p>For any disputes not subject to arbitration, you agree to submit to the exclusive jurisdiction of the courts located in Karnataka, India.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>10. Indemnification</h2>
+                    <p>You agree to indemnify, defend, and hold harmless the App developer, its affiliates, officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys' fees) arising out of or related to:</p>
+                    <ul>
+                        <li>Your use or misuse of the App</li>
+                        <li>Your violation of these Terms</li>
+                        <li>Your violation of any third-party rights, including intellectual property or privacy rights</li>
+                        <li>Any content you create or share using the App</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <h2>11. Severability</h2>
+                    <p>If any provision of these Terms is found to be invalid, illegal, or unenforceable, the remaining provisions will continue in full force and effect.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>12. Entire Agreement</h2>
+                    <p>These Terms, together with the Privacy Policy, constitute the entire agreement between you and the App developer regarding your use of the App and supersede all prior agreements and understandings.</p>
+                </section>
+
+                <section className="terms-section contact-section">
+                    <div className="section-icon">
+                        <Mail size={24} />
+                    </div>
+                    <h2>13. Contact Us</h2>
+                    <p>If you have any questions, concerns, or feedback regarding these Terms, please contact us:</p>
+                    <div className="contact-info">
+                        <p><strong>Email:</strong> nishantharadhya4@gmail.com</p>
+                        <p><strong>Website:</strong> <a href="https://www.nexaaradhya.site/" target="_blank" rel="noopener noreferrer">https://www.nexaaradhya.site/</a></p>
+                        <p><strong>Developer:</strong> Nishanth Aradhya AG</p>
+                    </div>
+                </section>
+
+                <section className="terms-section">
+                    <h2>14. Acknowledgment</h2>
+                    <p>By using GEOCAM PRO, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</p>
+                    <p><strong>Thank you for using GEOCAM PRO!</strong></p>
+                </section>
+            </div>
+
+            <div className="terms-footer">
+                <p>© 2026 GEOCAM PRO. All rights reserved.</p>
+            </div>
+        </div>
+    );
+};
+
 const AppTerms = () => {
     const { appId } = useParams();
     const navigate = useNavigate();
@@ -618,6 +920,11 @@ const AppTerms = () => {
     // Use detailed PDFGen terms
     if (appId === 'pdfgen') {
         return <PDFGenTerms navigate={navigate} />;
+    }
+
+    // Use detailed Geocam terms
+    if (appId === 'geocam') {
+        return <GeocamTerms navigate={navigate} />;
     }
 
     if (!app) {
