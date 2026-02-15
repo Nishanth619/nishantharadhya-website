@@ -81,30 +81,18 @@ const NearTransferPrivacy = ({ navigate }) => {
                 <div className="terms-title-section">
                     <Shield className="terms-icon" size={40} />
                     <h1>📲 NearTransfer - Privacy Policy</h1>
-                    <p className="last-updated">Effective Date: January 1, 2026</p>
+                    <p className="last-updated">Last Updated: January 2026</p>
                 </div>
             </div>
 
             <div className="terms-content">
                 <section className="terms-section">
-                    <p>
-                        Welcome to NearTransfer ("we," "our," or "us"). This Privacy Policy explains how we collect, use, disclose, and
-                        safeguard your information when you use our mobile application NearTransfer (the "App"). Please read this
-                        Privacy Policy carefully.
-                    </p>
-                    <p>
-                        By downloading, installing, or using NearTransfer, you agree to the collection and use of information in
-                        accordance with this policy.
-                    </p>
-                </section>
-
-                <section className="terms-section">
                     <div className="section-icon">
-                        <Eye size={24} />
+                        <Shield size={24} />
                     </div>
-                    <h2>1. App Overview</h2>
+                    <h2>Introduction</h2>
                     <p>
-                        NearTransfer is a cross-platform file sharing application that enables seamless file transfers between Android and Windows devices over the same WiFi network. Share files from phone to PC, PC to phone, or between devices of the same platform — all without requiring internet or cloud storage.
+                        NearTransfer ("we", "our", or "the App") is a peer-to-peer file sharing application that allows users to transfer files, contacts, and other data between devices connected to the same local WiFi network. The App is available on the Google Play Store (Android) and the Microsoft Store (Windows). This Privacy Policy explains how we handle your data.
                     </p>
                 </section>
 
@@ -112,131 +100,129 @@ const NearTransferPrivacy = ({ navigate }) => {
                     <div className="section-icon">
                         <Database size={24} />
                     </div>
-                    <h2>2. Information We Collect</h2>
+                    <h2>Data Collection and Usage</h2>
 
-                    <h3>2.1 Information We Do NOT Collect</h3>
+                    <h3>What We DON'T Collect</h3>
                     <div className="highlight-box">
-                        <p><strong>We do NOT collect, store, or have access to:</strong></p>
                         <ul>
-                            <li>The content of files you transfer (photos, videos, documents, etc.)</li>
-                            <li>Your contacts or contact information</li>
-                            <li>Your call logs or SMS messages</li>
-                            <li>Your precise location</li>
-                            <li>Personal identification information (name, email, phone number)</li>
-                            <li>Login credentials (no account required)</li>
+                            <li><strong>Your Files:</strong> We never upload, store, or access your files on any external servers. All file transfers occur directly between your devices over your local network.</li>
+                            <li><strong>Personal Information:</strong> We do not collect names, email addresses, phone numbers, or any personally identifiable information.</li>
+                            <li><strong>Transfer Content:</strong> All transferred data is sent directly to your other device and is never stored on our servers.</li>
                         </ul>
-                        <p><strong>All file transfers happen directly between devices on your local network. We never see or store your transferred files.</strong></p>
                     </div>
 
-                    <h3>2.2 Information Automatically Collected</h3>
-                    <p>We may collect limited technical information through our advertising partner (Google AdMob):</p>
+                    <h3>What We May Collect</h3>
                     <ul>
-                        <li><strong>Device Information:</strong> Device type, model, operating system version</li>
-                        <li><strong>Advertising Identifier:</strong> A resettable identifier used for personalized advertising</li>
-                        <li><strong>IP Address:</strong> Used for approximate geographic location (country-level) for ad targeting</li>
-                        <li><strong>App Usage:</strong> General usage statistics such as app opens, session duration</li>
+                        <li><strong>Anonymous Analytics:</strong> Basic app usage statistics (feature usage, crash reports) to improve the app experience. This can be disabled in Settings.</li>
+                        <li><strong>Advertising Data:</strong> On mobile platforms (Android/iOS), our ad partner (Google AdMob) may collect advertising identifiers for personalized ads. See Google's Privacy Policy for details. On Windows, the App does not display advertisements.</li>
                     </ul>
-
-                    <h3>2.3 Local Data Storage</h3>
-                    <p>The App stores the following data locally on your device (NOT on our servers):</p>
-                    <ul>
-                        <li><strong>Transfer History:</strong> Records of files you've received (stored in local database)</li>
-                        <li><strong>App Settings:</strong> Your preferences such as device name, save location</li>
-                        <li><strong>Premium Status:</strong> Whether you've purchased the ad-free version</li>
-                    </ul>
-                    <p>This data remains on your device and is not transmitted to us.</p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon">
                         <Lock size={24} />
                     </div>
-                    <h2>3. Permissions We Request</h2>
-                    <p>NearTransfer requires certain permissions to function. Here's a complete list and why we need each:</p>
+                    <h2>Permissions We Request</h2>
 
+                    <h3>Required Permissions</h3>
                     <div className="permissions-table">
                         <table>
                             <thead>
                                 <tr>
                                     <th>Permission</th>
                                     <th>Purpose</th>
-                                    <th>When Used</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Internet</strong></td>
-                                    <td>Display advertisements, check for updates</td>
-                                    <td>Throughout app usage</td>
+                                    <td>Internet</td>
+                                    <td>For signaling server connection to establish peer-to-peer transfers</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>WiFi State</strong></td>
-                                    <td>Discover nearby devices on the same network</td>
-                                    <td>When sending/receiving files</td>
+                                    <td>WiFi/Network State</td>
+                                    <td>To discover nearby devices on your local network</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Network State</strong></td>
-                                    <td>Check network connectivity status</td>
-                                    <td>Before file transfers</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Storage (Read/Write)</strong></td>
-                                    <td>Access files you select to send, save received files</td>
-                                    <td>Only when you initiate transfers</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Contacts (Read/Write)</strong></td>
-                                    <td>Export contacts to share, import received contacts</td>
-                                    <td>Only in Contact Sharing feature</td>
+                                    <td>Storage</td>
+                                    <td>To read files you want to share and save received files</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
-                    <p><strong>Note:</strong> Contacts are accessed only when you explicitly choose to use the Contact Sharing feature and are never collected, stored, or transmitted to our servers.</p>
-
+                    <h3>Optional Permissions</h3>
                     <div className="permissions-table">
                         <table>
                             <thead>
                                 <tr>
                                     <th>Permission</th>
                                     <th>Purpose</th>
-                                    <th>When Used</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Query All Packages</strong></td>
-                                    <td>List installed apps for app sharing feature</td>
-                                    <td>Only in App Sharing feature</td>
+                                    <td>Camera</td>
+                                    <td>QR code scanning for quick device pairing</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Install Packages</strong></td>
-                                    <td>Install received APK files (with your permission)</td>
-                                    <td>Only when you choose to install</td>
+                                    <td>Contacts</td>
+                                    <td>Contact sharing feature - export/import contacts</td>
+                                </tr>
+                                <tr>
+                                    <td>Photos & Videos</td>
+                                    <td>Media gallery access for sharing photos and videos</td>
+                                </tr>
+                                <tr>
+                                    <td>Installed Apps</td>
+                                    <td>To list and share installed applications as APK files</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-
-                    <div className="warning-box">
-                        <p><strong>Note:</strong> All permissions are optional and requested only when you use the specific feature. You can deny permissions, but some features may not work without them.</p>
-                    </div>
-
-                    <p><strong>Important:</strong> NearTransfer does not track app usage, behavior, or analytics related to installed applications. Installed app information is used only to display apps for user-initiated sharing.</p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon">
-                        <FileText size={24} />
+                        <Wifi size={24} />
                     </div>
-                    <h2>4. How We Use Information</h2>
-                    <p>The limited information we collect is used to:</p>
+                    <h2>Data Transfer</h2>
+                    <p>All data transfers in NearTransfer occur:</p>
                     <ul>
-                        <li>Display relevant advertisements (via Google AdMob)</li>
-                        <li>Process in-app purchases (via Google Play Billing)</li>
-                        <li>Improve app performance and fix bugs</li>
-                        <li>Comply with legal obligations</li>
+                        <li><strong>Peer-to-Peer:</strong> Directly between your devices</li>
+                        <li><strong>Local Network Only:</strong> Over your WiFi network, not through the internet</li>
+                        <li><strong>Encrypted:</strong> Using secure TCP socket connections</li>
+                        <li><strong>No Intermediary:</strong> Without passing through our servers</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Globe size={24} />
+                    </div>
+                    <h2>Third-Party Services</h2>
+
+                    <h3>Google AdMob</h3>
+                    <p>We display advertisements through Google AdMob. Google may collect:</p>
+                    <ul>
+                        <li>Advertising ID</li>
+                        <li>Device information</li>
+                        <li>General location (country/region)</li>
+                    </ul>
+                    <p>You can opt out of personalized ads in your device settings. For more information, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</p>
+
+                    <h3>In-App Purchases</h3>
+                    <p>We use platform-native billing for premium subscriptions: Google Play Billing on Android and Microsoft Store on Windows. Purchase data is handled by the respective platform according to their privacy policies.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <ShieldCheck size={24} />
+                    </div>
+                    <h2>Data Security</h2>
+                    <ul>
+                        <li>All file transfers use <strong>encrypted TCP connections</strong></li>
+                        <li>We do not store any user data on external servers</li>
+                        <li>File transfers happen directly between devices without intermediaries</li>
                     </ul>
                 </section>
 
@@ -244,74 +230,9 @@ const NearTransferPrivacy = ({ navigate }) => {
                     <div className="section-icon">
                         <Users size={24} />
                     </div>
-                    <h2>5. Third-Party Services</h2>
-
-                    <h3>5.1 Google AdMob</h3>
-                    <p>We use Google AdMob to display advertisements. AdMob collects data to provide personalized ads:</p>
-                    <ul>
-                        <li>Device advertising identifier</li>
-                        <li>IP address for location targeting</li>
-                        <li>App and device information</li>
-                    </ul>
-                    <p><strong>How to opt out:</strong> Go to Settings → Google → Ads → Opt out of Ads Personalization</p>
-                    <p>Learn more: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></p>
-
-                    <h3>5.2 Google Play Billing</h3>
-                    <p>For premium purchases, we use Google Play Billing. All payment processing is handled by Google. We receive only:</p>
-                    <ul>
-                        <li>Confirmation of purchase (purchase token)</li>
-                        <li>Product purchased (remove ads)</li>
-                    </ul>
-                    <p>We do NOT receive your payment details, credit card information, or billing address.</p>
-
-                    <h3>5.3 Local Network Transfer Protocol</h3>
-                    <p>File transfers use TCP and HTTP protocols over your local WiFi network. All transfers happen directly between devices without routing through external servers.</p>
-                </section>
-
-                <section className="terms-section">
-                    <div className="section-icon">
-                        <ShieldCheck size={24} />
-                    </div>
-                    <h2>6. Data Transfer and Security</h2>
-                    <div className="highlight-box">
-                        <p><strong>How File Transfers Work:</strong></p>
-                        <ul>
-                            <li>All file transfers happen directly between devices on your local WiFi network</li>
-                            <li>Files are NOT uploaded to any cloud server</li>
-                            <li>Files are NOT routed through our servers</li>
-                            <li>We have no access to the content of your transfers</li>
-                        </ul>
-                    </div>
-
-                    <p><strong>Security Recommendations:</strong></p>
-                    <ul>
-                        <li>Use secure, password-protected WiFi networks</li>
-                        <li>Only accept file transfers from trusted devices</li>
-                        <li>The security of transfers depends on your network security</li>
-                    </ul>
-                </section>
-
-                <section className="terms-section">
-                    <div className="section-icon">
-                        <Database size={24} />
-                    </div>
-                    <h2>7. Data Retention</h2>
-                    <ul>
-                        <li><strong>Local Data:</strong> Transfer history and settings remain on your device until you clear app data or uninstall</li>
-                        <li><strong>Advertising Data:</strong> Managed by Google AdMob per their retention policies</li>
-                        <li><strong>Purchase Data:</strong> Managed by Google Play per their retention policies</li>
-                    </ul>
-                </section>
-
-                <section className="terms-section">
-                    <div className="section-icon">
-                        <Globe size={24} />
-                    </div>
-                    <h2>8. Children's Privacy</h2>
+                    <h2>Children's Privacy</h2>
                     <p>
-                        NearTransfer is not intended for children under 13 years of age. We do not knowingly collect personal information
-                        from children under 13. If you are a parent or guardian and believe your child has provided personal
-                        information, please contact us at the email below, and we will delete such information.
+                        NearTransfer is not intended for children under 13. We do not knowingly collect information from children under 13.
                     </p>
                 </section>
 
@@ -319,45 +240,40 @@ const NearTransferPrivacy = ({ navigate }) => {
                     <div className="section-icon">
                         <Bell size={24} />
                     </div>
-                    <h2>9. Your Rights and Choices</h2>
-                    <p>You have the following rights regarding your data:</p>
+                    <h2>Your Rights</h2>
+                    <p>You have the right to:</p>
                     <ul>
-                        <li><strong>Opt-out of Personalized Ads:</strong> Adjust settings in your device's Google settings</li>
-                        <li><strong>Clear Local Data:</strong> Clear app data in Android settings or uninstall the app</li>
-                        <li><strong>Deny Permissions:</strong> You can deny any permission; features may be limited</li>
-                        <li><strong>Request Information:</strong> Contact us to inquire about data practices</li>
+                        <li><strong>Deny Permissions:</strong> Refuse any optional permission without losing core functionality</li>
+                        <li><strong>Disable Analytics:</strong> Turn off anonymous usage statistics in Settings</li>
+                        <li><strong>Opt-Out of Personalized Ads:</strong> Through your device's advertising settings</li>
+                        <li><strong>Delete Data:</strong> Uninstalling the app removes all locally stored app data</li>
                     </ul>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon">
-                        <Globe size={24} />
+                        <FileText size={24} />
                     </div>
-                    <h2>10. International Users</h2>
+                    <h2>Changes to This Policy</h2>
                     <p>
-                        NearTransfer is operated from India. If you are accessing the App from outside India, please be aware that any
-                        limited data collected may be transferred to and processed in India. By using the App, you consent to this
-                        transfer. The app primarily operates locally on your device, minimizing international data transfers.
-                    </p>
-                </section>
-
-                <section className="terms-section">
-                    <h2>11. Changes to This Privacy Policy</h2>
-                    <p>
-                        We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated
-                        "Effective Date." We encourage you to review this Privacy Policy periodically. Continued use of the App after
-                        changes constitutes acceptance of the updated policy.
+                        We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date.
                     </p>
                 </section>
 
                 <section className="terms-section contact-section">
-                    <h2>12. Contact Us</h2>
-                    <p>If you have questions, concerns, or requests regarding this Privacy Policy, please contact us:</p>
+                    <div className="section-icon">
+                        <FileText size={24} />
+                    </div>
+                    <h2>Contact Us</h2>
+                    <p>If you have questions about this Privacy Policy, please contact us at:</p>
                     <div className="contact-info">
                         <p><strong>Email:</strong> agnishanth609@gmail.com</p>
-                        <p><strong>Developer:</strong> NearTransfer</p>
                     </div>
-                    <p>We aim to respond to all inquiries within 48 business hours.</p>
+                    <p>
+                        <strong>NearTransfer</strong><br />
+                        A peer-to-peer file sharing app<br />
+                        © 2026 NearTransfer. All rights reserved.
+                    </p>
                 </section>
             </div>
 
