@@ -68,7 +68,7 @@ const appData = {
         isDetailed: true
     },
     atsai: {
-        name: "ATS.AI",
+        name: "Ats.Ai",
         icon: "🤖",
         description: "AI-powered resume builder and ATS score checker",
         isDetailed: true
@@ -754,7 +754,7 @@ const GeocamPrivacy = ({ navigate }) => {
     );
 };
 
-// Detailed ATS.AI Privacy Policy Component
+// Detailed Ats.Ai Privacy Policy Component
 const ATSAPrivacy = ({ navigate }) => {
     return (
         <div className="terms-container" data-theme="dark">
@@ -765,7 +765,7 @@ const ATSAPrivacy = ({ navigate }) => {
                 </button>
                 <div className="terms-title-section">
                     <Shield className="terms-icon" size={40} />
-                    <h1>🤖 ATS.AI - Privacy Policy</h1>
+                    <h1>🤖 Ats.Ai - Privacy Policy</h1>
                     <p className="last-updated">Effective date: May 10, 2026</p>
                 </div>
             </div>
@@ -878,7 +878,7 @@ const ATSAPrivacy = ({ navigate }) => {
             </div>
 
             <div className="terms-footer">
-                <p>© 2026 ATS.AI. All rights reserved.</p>
+                <p>© 2026 Ats.Ai. All rights reserved.</p>
             </div>
         </div>
     );

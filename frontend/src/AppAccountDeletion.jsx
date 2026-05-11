@@ -6,7 +6,7 @@ import './Terms.css';
 // Per-app account deletion data
 const appData = {
     atsai: {
-        name: 'ATS.AI',
+        name: 'Ats.Ai',
         icon: '🤖',
         email: 'nishantharadhya7@gmail.com',
         hasAccount: true,

@@ -64,7 +64,7 @@ const appData = {
         isDetailed: true
     },
     atsai: {
-        name: "ATS.AI",
+        name: "Ats.Ai",
         icon: "🤖",
         description: "AI-powered resume builder and ATS score checker",
         isDetailed: true
@@ -913,7 +913,7 @@ const GeocamTerms = ({ navigate }) => {
     );
 };
 
-// Detailed ATS.AI Terms and Conditions Component
+// Detailed Ats.Ai Terms and Conditions Component
 const ATSATerms = ({ navigate }) => {
     return (
         <div className="terms-container" data-theme="dark">
@@ -924,7 +924,7 @@ const ATSATerms = ({ navigate }) => {
                 </button>
                 <div className="terms-title-section">
                     <FileText className="terms-icon" size={40} />
-                    <h1>🤖 ATS.AI - Terms and Conditions</h1>
+                    <h1>🤖 Ats.Ai - Terms and Conditions</h1>
                     <p className="last-updated">Effective date: May 10, 2026</p>
                 </div>
             </div>
@@ -1030,7 +1030,7 @@ const ATSATerms = ({ navigate }) => {
             </div>
 
             <div className="terms-footer">
-                <p>© 2026 ATS.AI. All rights reserved.</p>
+                <p>© 2026 Ats.Ai. All rights reserved.</p>
             </div>
         </div>
     );

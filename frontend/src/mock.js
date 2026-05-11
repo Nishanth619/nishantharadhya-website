@@ -90,7 +90,7 @@ export const apps = [
   },
   {
     id: 7,
-    name: "ATS.AI",
+    name: "Ats.Ai",
     description: "Land your dream job with AI-powered resume building, real-time ATS scoring, smart cover letters, and expert optimization tips — all in one app",
     category: "Career & Productivity",
     downloadLink: "https://play.google.com/store/apps/details?id=com.nexaaradhya.atsai",
