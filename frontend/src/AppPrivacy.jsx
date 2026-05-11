@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Shield, Eye, Database, Lock, Bell, Users, Globe, AlertCircle, Wifi, FileText, CreditCard, ShieldCheck } from 'lucide-react';
+import { ArrowLeft, Shield, Eye, Database, Lock, Bell, Users, Globe, AlertCircle, Wifi, FileText, CreditCard, ShieldCheck, Mail } from 'lucide-react';
 import './Terms.css';
 
 // App-specific data
