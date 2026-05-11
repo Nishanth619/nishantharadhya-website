@@ -7,6 +7,7 @@ import Terms from './Terms';
 import PrivacyPolicy from './PrivacyPolicy';
 import AppTerms from './AppTerms';
 import AppPrivacy from './AppPrivacy';
+import AppAccountDeletion from './AppAccountDeletion';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms/:appId" element={<AppTerms />} />
             <Route path="/privacy/:appId" element={<AppPrivacy />} />
+            <Route path="/delete-account/:appId" element={<AppAccountDeletion />} />
           </Routes>
         </BrowserRouter>
       </div>

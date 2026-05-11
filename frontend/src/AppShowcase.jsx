@@ -200,12 +200,22 @@ const AppShowcase = () => {
                                 )}
 
                                 <button
-                                    className="showcase-cta"
-                                    onClick={() => window.open(app.downloadLink, '_blank')}
+                                    className={`showcase-cta ${app.status === 'coming_soon' ? 'coming-soon' : ''}`}
+                                    onClick={() => app.status !== 'coming_soon' && window.open(app.downloadLink, '_blank')}
+                                    disabled={app.status === 'coming_soon'}
                                 >
-                                    <Download size={18} />
-                                    <span>Download Now</span>
-                                    <ChevronRight size={18} />
+                                    {app.status === 'coming_soon' ? (
+                                        <>
+                                            <span>Coming Soon</span>
+                                            <ChevronRight size={18} />
+                                        </>
+                                    ) : (
+                                        <>
+                                            <Download size={18} />
+                                            <span>Download Now</span>
+                                            <ChevronRight size={18} />
+                                        </>
+                                    )}
                                 </button>
                             </div>
                         </div>

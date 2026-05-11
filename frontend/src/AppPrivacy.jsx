@@ -66,6 +66,12 @@ const appData = {
         icon: "📸",
         description: "Professional geo-tagged camera application",
         isDetailed: true
+    },
+    atsai: {
+        name: "ATS.AI",
+        icon: "🤖",
+        description: "AI-powered resume builder and ATS score checker",
+        isDetailed: true
     }
 };
 
@@ -748,6 +754,99 @@ const GeocamPrivacy = ({ navigate }) => {
     );
 };
 
+// Detailed ATS.AI Privacy Policy Component
+const ATSAPrivacy = ({ navigate }) => {
+    return (
+        <div className="terms-container" data-theme="dark">
+            <div className="terms-header">
+                <button className="back-button" onClick={() => navigate('/')}>
+                    <ArrowLeft size={20} />
+                    <span>Back to Home</span>
+                </button>
+                <div className="terms-title-section">
+                    <Shield className="terms-icon" size={40} />
+                    <h1>🤖 ATS.AI - Privacy Policy</h1>
+                    <p className="last-updated">Effective date: May 10, 2026</p>
+                </div>
+            </div>
+
+            <div className="terms-content">
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Shield size={24} />
+                    </div>
+                    <h2>Introduction</h2>
+                    <p>This Privacy Policy explains how ATS Resume Builder, operated by Nishanth Aradhya ("we," "us," or "our"), collects, uses, shares, stores, and deletes information when you use the ATS Resume Builder mobile app, website, backend services, and related features (together, the "Service").</p>
+                    <p>Privacy contact: <a href="mailto:nishantharadhya7@gmail.com">nishantharadhya7@gmail.com</a></p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Database size={24} />
+                    </div>
+                    <h2>1. Information We Collect</h2>
+                    <p>We collect information you provide, information created while using the Service, and information collected automatically by our app and service providers.</p>
+                    
+                    <h3>Account information</h3>
+                    <p>When you create or use an account, we may collect: Name, Email address, Firebase user ID, Authentication tokens, and Sign-in provider information.</p>
+
+                    <h3>Resume and Job-Search Content</h3>
+                    <p>Depending on the features you use, we may collect and store: Resume titles, templates, Personal details (phone, location, experience), Cover letters, and Job tracker information.</p>
+
+                    <h3>AI Feature Data</h3>
+                    <p>When you use AI features such as ATS analysis or resume tailoring, we process the text you submit and the AI-generated output. This includes resume text and job descriptions.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Lock size={24} />
+                    </div>
+                    <h2>2. How We Use Information</h2>
+                    <ul>
+                        <li>Create, authenticate, and manage your account</li>
+                        <li>Save, sync, and export resumes and cover letters</li>
+                        <li>Generate AI-powered ATS scores and keyword matches</li>
+                        <li>Provide free, ad-supported, and paid features</li>
+                        <li>Monitor app reliability and fix bugs</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Globe size={24} />
+                    </div>
+                    <h2>3. Data Sharing</h2>
+                    <p>We share information only as needed to operate the Service. Key service providers include Google Firebase (Auth, Firestore, Analytics), Google AdMob (Advertising), and AI providers (Google Gemini, Groq).</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <AlertCircle size={24} />
+                    </div>
+                    <h2>4. Your Choices and Deletion</h2>
+                    <p>You can edit or delete resumes and applications at any time. To delete your entire account and associated data, please visit our <a href="/delete-account/atsai">Account Deletion Page</a>.</p>
+                </section>
+
+                <section className="terms-section contact-section">
+                    <div className="section-icon">
+                        <Mail size={24} />
+                    </div>
+                    <h2>Contact Us</h2>
+                    <p>For privacy questions or data requests, contact:</p>
+                    <div className="contact-info">
+                        <p><strong>Nishanth Aradhya</strong></p>
+                        <p>Email: nishantharadhya7@gmail.com</p>
+                    </div>
+                </section>
+            </div>
+
+            <div className="terms-footer">
+                <p>© 2026 ATS.AI. All rights reserved.</p>
+            </div>
+        </div>
+    );
+};
+
 const AppPrivacy = () => {
     const { appId } = useParams();
     const navigate = useNavigate();
@@ -766,6 +865,11 @@ const AppPrivacy = () => {
     // Use detailed Geocam privacy policy
     if (appId === 'geocam') {
         return <GeocamPrivacy navigate={navigate} />;
+    }
+
+    // Use detailed ATSAI privacy policy
+    if (appId === 'atsai') {
+        return <ATSAPrivacy navigate={navigate} />;
     }
 
 

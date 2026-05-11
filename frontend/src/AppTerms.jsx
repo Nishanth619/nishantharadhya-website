@@ -62,6 +62,12 @@ const appData = {
         icon: "📸",
         description: "Professional geo-tagged camera application",
         isDetailed: true
+    },
+    atsai: {
+        name: "ATS.AI",
+        icon: "🤖",
+        description: "AI-powered resume builder and ATS score checker",
+        isDetailed: true
     }
 };
 
@@ -907,6 +913,83 @@ const GeocamTerms = ({ navigate }) => {
     );
 };
 
+// Detailed ATS.AI Terms and Conditions Component
+const ATSATerms = ({ navigate }) => {
+    return (
+        <div className="terms-container" data-theme="dark">
+            <div className="terms-header">
+                <button className="back-button" onClick={() => navigate('/')}>
+                    <ArrowLeft size={20} />
+                    <span>Back to Home</span>
+                </button>
+                <div className="terms-title-section">
+                    <FileText className="terms-icon" size={40} />
+                    <h1>🤖 ATS.AI - Terms and Conditions</h1>
+                    <p className="last-updated">Effective date: May 10, 2026</p>
+                </div>
+            </div>
+
+            <div className="terms-content">
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Scale size={24} />
+                    </div>
+                    <h2>1. Agreement to Terms</h2>
+                    <p>These Terms and Conditions ("Terms") govern your access to and use of ATS Resume Builder, including the mobile app, website, backend services, AI features, templates, export tools, job tracker, and related services (together, the "Service"). By using the Service, you agree to these Terms.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Shield size={24} />
+                    </div>
+                    <h2>2. AI Features Disclaimer</h2>
+                    <p>The Service may use AI to generate, rewrite, summarize, score, tailor, or analyze resumes and career content. AI output is provided for assistance only. It may be inaccurate, incomplete, or unsuitable for your situation. You must review and verify all AI output before using it.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <FileText size={24} />
+                    </div>
+                    <h2>3. Career and Employment Disclaimer</h2>
+                    <p>The Service does not guarantee interviews, job offers, hiring outcomes, ATS compatibility, or career success. ATS scores and keyword matches are informational tools only. You are responsible for the truthfulness and accuracy of all materials you create.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <Lock size={24} />
+                    </div>
+                    <h2>4. Accounts and Content</h2>
+                    <p>You keep ownership of "Your Content." You give us a limited license to host, process, and store Your Content as needed to provide the Service. We may suspend access if we believe your account is being used unlawfully or in violation of these Terms.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon">
+                        <AlertCircle size={24} />
+                    </div>
+                    <h2>5. Limitation of Liability</h2>
+                    <p>To the maximum extent permitted by law, we will not be liable for indirect, incidental, or consequential damages, or for lost profits, lost opportunities, or employment outcomes arising from or related to the Service.</p>
+                </section>
+
+                <section className="terms-section contact-section">
+                    <div className="section-icon">
+                        <Mail size={24} />
+                    </div>
+                    <h2>Contact Us</h2>
+                    <p>For any questions regarding these Terms, please contact:</p>
+                    <div className="contact-info">
+                        <p><strong>Nishanth Aradhya</strong></p>
+                        <p>Email: nishantharadhya7@gmail.com</p>
+                    </div>
+                </section>
+            </div>
+
+            <div className="terms-footer">
+                <p>© 2026 ATS.AI. All rights reserved.</p>
+            </div>
+        </div>
+    );
+};
+
 const AppTerms = () => {
     const { appId } = useParams();
     const navigate = useNavigate();
@@ -925,6 +1008,11 @@ const AppTerms = () => {
     // Use detailed Geocam terms
     if (appId === 'geocam') {
         return <GeocamTerms navigate={navigate} />;
+    }
+
+    // Use detailed ATSAI terms
+    if (appId === 'atsai') {
+        return <ATSATerms navigate={navigate} />;
     }
 
     if (!app) {

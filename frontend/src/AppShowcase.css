@@ -307,6 +307,19 @@
     box-shadow: 0 20px 60px rgba(0, 255, 209, 0.5);
 }
 
+.showcase-cta.coming-soon {
+    background: linear-gradient(135deg, #333, #222);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    cursor: not-allowed;
+    color: #666;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.showcase-cta.coming-soon:hover {
+    transform: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
 /* Progress Indicators */
 .showcase-progress {
     position: fixed;

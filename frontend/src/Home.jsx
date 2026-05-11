@@ -163,7 +163,7 @@ const Home = () => {
   // Animated counters
   const [downloadsRef, downloadsCount] = useAnimatedCounter(10, 2000);
   const [ratingRef, ratingCount] = useAnimatedCounter(4.8, 2000);
-  const [appsCountRef, appsCount] = useAnimatedCounter(4, 2000);
+  const [appsCountRef, appsCount] = useAnimatedCounter(8, 2000);
 
   // Rotating typing effect for hero
   const typedText = useRotatingTypingEffect([
@@ -433,7 +433,7 @@ const Home = () => {
           <div className="about-stats">
             <div className="stat-card tilt-card">
               <div className="stat-card-inner">
-                <h3 className="stat-number">6+</h3>
+                <h3 className="stat-number">8+</h3>
                 <p className="stat-label">Apps Developed</p>
               </div>
             </div>

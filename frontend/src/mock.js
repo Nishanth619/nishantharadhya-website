@@ -87,6 +87,34 @@ export const apps = [
     downloads: "500K+",
     features: ["Image to PDF", "Document Converter", "PDF Templates", "Batch Creation"],
     status: "coming_soon"
+  },
+  {
+    id: 7,
+    name: "ATS.AI",
+    description: "Land your dream job with AI-powered resume building, real-time ATS scoring, smart cover letters, and expert optimization tips — all in one app",
+    category: "Career & Productivity",
+    downloadLink: "https://play.google.com/store/apps/details?id=com.nexaaradhya.atsai",
+    icon: "🤖",
+    screenshot: "/screenshots/atsai.jpg",
+    rating: 4.9,
+    downloads: "50K+",
+    features: ["AI Resume Builder", "ATS Score Checker", "Smart Cover Letters", "Job Tailoring"],
+    status: "published",
+    appId: "atsai"
+  },
+  {
+    id: 8,
+    name: "GeoCam Pro",
+    description: "Professional camera with real-time GPS tagging, compass overlay, and professional field data collection tools",
+    category: "Utility & Tools",
+    downloadLink: "https://play.google.com/store/apps/details?id=com.nexaaradhya.geocam",
+    icon: "📸",
+    screenshot: "/screenshots/geocam.jpg",
+    rating: 4.8,
+    downloads: "20K+",
+    features: ["GPS Location Overlay", "Magnetic Compass", "Tactical Map Styles", "Field Data Export"],
+    status: "published",
+    appId: "geocam"
   }
 ];
 
