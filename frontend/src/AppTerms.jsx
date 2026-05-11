@@ -930,54 +930,100 @@ const ATSATerms = ({ navigate }) => {
             </div>
 
             <div className="terms-content">
+                <p>These Terms and Conditions ("Terms") govern your access to and use of ATS Resume Builder, including the mobile app, website, backend services, AI features, templates, export tools, job tracker, and related services (together, the "Service"). By using the Service, you agree to these Terms.</p>
+
                 <section className="terms-section">
-                    <div className="section-icon">
-                        <Scale size={24} />
-                    </div>
-                    <h2>1. Agreement to Terms</h2>
-                    <p>These Terms and Conditions ("Terms") govern your access to and use of ATS Resume Builder, including the mobile app, website, backend services, AI features, templates, export tools, job tracker, and related services (together, the "Service"). By using the Service, you agree to these Terms.</p>
+                    <h2>1. Who We Are</h2>
+                    <p>ATS Resume Builder is operated by Nishanth Aradhya ("we," "us," or "our").</p>
+                    <p>Contact: <a href="mailto:nishantharadhya7@gmail.com">nishantharadhya7@gmail.com</a></p>
                 </section>
 
                 <section className="terms-section">
-                    <div className="section-icon">
-                        <Shield size={24} />
-                    </div>
-                    <h2>2. AI Features Disclaimer</h2>
-                    <p>The Service may use AI to generate, rewrite, summarize, score, tailor, or analyze resumes and career content. AI output is provided for assistance only. It may be inaccurate, incomplete, or unsuitable for your situation. You must review and verify all AI output before using it.</p>
+                    <h2>2. Eligibility</h2>
+                    <p>You must be able to form a legally binding agreement to use the Service. The Service is intended for professional/career use and is not directed to children under 13.</p>
                 </section>
 
                 <section className="terms-section">
-                    <div className="section-icon">
-                        <FileText size={24} />
-                    </div>
-                    <h2>3. Career and Employment Disclaimer</h2>
-                    <p>The Service does not guarantee interviews, job offers, hiring outcomes, ATS compatibility, or career success. ATS scores and keyword matches are informational tools only. You are responsible for the truthfulness and accuracy of all materials you create.</p>
+                    <div className="section-icon"><Lock size={24} /></div>
+                    <h2>3. Accounts</h2>
+                    <p>Some features require an account. You agree to provide accurate information and keep your credentials secure. We may suspend or terminate access for violations of these Terms.</p>
                 </section>
 
                 <section className="terms-section">
-                    <div className="section-icon">
-                        <Lock size={24} />
-                    </div>
-                    <h2>4. Accounts and Content</h2>
-                    <p>You keep ownership of "Your Content." You give us a limited license to host, process, and store Your Content as needed to provide the Service. We may suspend access if we believe your account is being used unlawfully or in violation of these Terms.</p>
+                    <h2>4. Your Content</h2>
+                    <p>You keep ownership of "Your Content." You grant us a limited license to host, process, and store Your Content as needed to provide the Service.</p>
                 </section>
 
                 <section className="terms-section">
-                    <div className="section-icon">
-                        <AlertCircle size={24} />
-                    </div>
-                    <h2>5. Limitation of Liability</h2>
-                    <p>To the maximum extent permitted by law, we will not be liable for indirect, incidental, or consequential damages, or for lost profits, lost opportunities, or employment outcomes arising from or related to the Service.</p>
+                    <div className="section-icon"><Shield size={24} /></div>
+                    <h2>5. AI Features</h2>
+                    <p>The Service may use AI to generate or analyze content. AI output is provided for assistance only and may be inaccurate. You must review and verify all AI output before use.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><FileText size={24} /></div>
+                    <h2>6. Career, Employment, and ATS Disclaimer</h2>
+                    <p>The Service does not guarantee interviews, job offers, or career success. ATS scores and suggestions are informational tools only.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>7. Third-Party Services</h2>
+                    <p>Use of LinkedIn import, Google Sign-In, or ads is also governed by those providers' terms and privacy policies.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>8. Subscriptions, Purchases, and Ads</h2>
+                    <p>Billing for subscriptions or paid features is handled by Google Play or third-party providers. You are responsible for managing your subscriptions.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>9. Acceptable Use</h2>
+                    <p>You agree not to violate laws, submit fraudulent info, scrape the service, or bypass usage limits.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>10. Sharing and Exporting</h2>
+                    <p>You are responsible for reviewing content before sharing it and for choosing recipients carefully.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>11. Intellectual Property</h2>
+                    <p>The Service, including software and designs, is owned by us and protected by intellectual property laws.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>12. Privacy</h2>
+                    <p>Our Privacy Policy explains how we handle information. By using the Service, you agree to the practices described in the <a href="/privacy/atsai">Privacy Policy</a>.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>13. Account Deletion</h2>
+                    <p>You may request account deletion at <a href="/delete-account/atsai">https://www.nexaaradhya.site/delete-account/atsai</a>.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><AlertCircle size={24} /></div>
+                    <h2>15. Disclaimers</h2>
+                    <p>The Service is provided "as is" and "as available" without warranties of any kind.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><AlertCircle size={24} /></div>
+                    <h2>16. Limitation of Liability</h2>
+                    <p>To the maximum extent permitted by law, we will not be liable for indirect or consequential damages arising from your use of the Service.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>18. Governing Law</h2>
+                    <p>These Terms are governed by the laws of India. Disputes shall be subject to the exclusive jurisdiction of the courts in India.</p>
                 </section>
 
                 <section className="terms-section contact-section">
-                    <div className="section-icon">
-                        <Mail size={24} />
-                    </div>
-                    <h2>Contact Us</h2>
-                    <p>For any questions regarding these Terms, please contact:</p>
+                    <div className="section-icon"><Mail size={24} /></div>
+                    <h2>20. Contact</h2>
                     <div className="contact-info">
                         <p><strong>Nishanth Aradhya</strong></p>
+                        <p>ATS Resume Builder</p>
                         <p>Email: nishantharadhya7@gmail.com</p>
                     </div>
                 </section>

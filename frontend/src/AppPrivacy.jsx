@@ -771,70 +771,107 @@ const ATSAPrivacy = ({ navigate }) => {
             </div>
 
             <div className="terms-content">
-                <section className="terms-section">
-                    <div className="section-icon">
-                        <Shield size={24} />
-                    </div>
-                    <h2>Introduction</h2>
-                    <p>This Privacy Policy explains how ATS Resume Builder, operated by Nishanth Aradhya ("we," "us," or "our"), collects, uses, shares, stores, and deletes information when you use the ATS Resume Builder mobile app, website, backend services, and related features (together, the "Service").</p>
-                    <p>Privacy contact: <a href="mailto:nishantharadhya7@gmail.com">nishantharadhya7@gmail.com</a></p>
-                </section>
+                <p>This Privacy Policy explains how ATS Resume Builder, operated by Nishanth Aradhya ("we," "us," or "our"), collects, uses, shares, stores, and deletes information when you use the ATS Resume Builder mobile app, website, backend services, and related features (together, the "Service").</p>
+                <p>Privacy contact: <a href="mailto:nishantharadhya7@gmail.com">nishantharadhya7@gmail.com</a></p>
 
                 <section className="terms-section">
-                    <div className="section-icon">
-                        <Database size={24} />
-                    </div>
+                    <div className="section-icon"><Database size={24} /></div>
                     <h2>1. Information We Collect</h2>
                     <p>We collect information you provide, information created while using the Service, and information collected automatically by our app and service providers.</p>
                     
                     <h3>Account information</h3>
-                    <p>When you create or use an account, we may collect: Name, Email address, Firebase user ID, Authentication tokens, and Sign-in provider information.</p>
+                    <ul>
+                        <li>Name and Email address</li>
+                        <li>Firebase user ID and authentication tokens</li>
+                        <li>Sign-in provider information (including Google Sign-In)</li>
+                        <li>Subscription status and account metadata</li>
+                    </ul>
 
-                    <h3>Resume and Job-Search Content</h3>
-                    <p>Depending on the features you use, we may collect and store: Resume titles, templates, Personal details (phone, location, experience), Cover letters, and Job tracker information.</p>
+                    <h3>Resume, profile, and job-search content</h3>
+                    <p>Depending on the features you use, we may collect and store:</p>
+                    <ul>
+                        <li>Resume details (name, contact info, experience, education, skills, etc.)</li>
+                        <li>Cover letters and generated text</li>
+                        <li>Job tracker information (companies, roles, status)</li>
+                        <li>Profile photos and generated PDF/DOCX files</li>
+                        <li>LinkedIn profile data if you choose to import it</li>
+                    </ul>
 
-                    <h3>AI Feature Data</h3>
-                    <p>When you use AI features such as ATS analysis or resume tailoring, we process the text you submit and the AI-generated output. This includes resume text and job descriptions.</p>
+                    <h3>Files, photos, and device permissions</h3>
+                    <p>The app may request permission to access photos or files for features like profile photo uploads or LinkedIn ZIP imports. The app does not access your files in the background.</p>
+
+                    <h3>AI feature inputs and outputs</h3>
+                    <p>When you use AI features (ATS analysis, tailoring, etc.), we process the text you submit and the AI-generated output.</p>
                 </section>
 
                 <section className="terms-section">
-                    <div className="section-icon">
-                        <Lock size={24} />
-                    </div>
+                    <div className="section-icon"><Lock size={24} /></div>
                     <h2>2. How We Use Information</h2>
                     <ul>
                         <li>Create, authenticate, and manage your account</li>
-                        <li>Save, sync, and export resumes and cover letters</li>
-                        <li>Generate AI-powered ATS scores and keyword matches</li>
+                        <li>Save, sync, display, edit, export, and delete career documents</li>
+                        <li>Generate ATS scores and AI-powered content</li>
                         <li>Provide free, ad-supported, and paid features</li>
-                        <li>Monitor app reliability and fix bugs</li>
+                        <li>Monitor reliability, fix bugs, and maintain security</li>
+                        <li>Comply with applicable laws and Google Play policies</li>
                     </ul>
                 </section>
 
                 <section className="terms-section">
-                    <div className="section-icon">
-                        <Globe size={24} />
-                    </div>
-                    <h2>3. Data Sharing</h2>
-                    <p>We share information only as needed to operate the Service. Key service providers include Google Firebase (Auth, Firestore, Analytics), Google AdMob (Advertising), and AI providers (Google Gemini, Groq).</p>
+                    <div className="section-icon"><AlertCircle size={24} /></div>
+                    <h2>3. AI Processing and Content Responsibility</h2>
+                    <p>The Service uses AI to assist with document writing. AI outputs may be inaccurate or inappropriate. You are responsible for reviewing, editing, and verifying all AI-generated content before using it in job applications.</p>
                 </section>
 
                 <section className="terms-section">
-                    <div className="section-icon">
-                        <AlertCircle size={24} />
-                    </div>
-                    <h2>4. Your Choices and Deletion</h2>
-                    <p>You can edit or delete resumes and applications at any time. To delete your entire account and associated data, please visit our <a href="/delete-account/atsai">Account Deletion Page</a>.</p>
+                    <div className="section-icon"><Users size={24} /></div>
+                    <h2>4. How We Share Information</h2>
+                    <p>We share information with service providers including: Google Firebase, Google Mobile Ads (AdMob), Google Play Billing, RevenueCat, and AI providers (Google Gemini, Groq).</p>
+                    <p>If you choose to export or share a resume, the information is shared with the apps or services you select.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><ShieldCheck size={24} /></div>
+                    <h2>5. Data Security</h2>
+                    <p>We use reasonable technical measures to protect information, including HTTPS, Firebase security rules, and authentication. No method of storage or transmission is 100% secure.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Wifi size={24} /></div>
+                    <h2>6. Data Retention</h2>
+                    <p>We retain information as long as needed to provide the Service. Account records and resume data are kept until you delete them or request account deletion.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><AlertCircle size={24} /></div>
+                    <h2>7. Deleting Your Information and Account</h2>
+                    <p>To request deletion of your account and associated app data, use the account deletion page at: <a href="/delete-account/atsai">https://www.nexaaradhya.site/delete-account/atsai</a></p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Globe size={24} /></div>
+                    <h2>8. Your Choices</h2>
+                    <p>You can choose whether to create an account, manage ad personalization, and decline optional permissions. You can also request access, correction, or deletion by contacting us.</p>
+                </section>
+
+                <section className="terms-section">
+                    <h2>9. Children's Privacy</h2>
+                    <p>ATS Resume Builder is intended for professional use and is not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Globe size={24} /></div>
+                    <h2>10. International Users</h2>
+                    <p>Your information may be processed in countries other than where you live, which may have different data protection laws.</p>
                 </section>
 
                 <section className="terms-section contact-section">
-                    <div className="section-icon">
-                        <Mail size={24} />
-                    </div>
+                    <div className="section-icon"><Mail size={24} /></div>
                     <h2>Contact Us</h2>
-                    <p>For privacy questions or data requests, contact:</p>
+                    <p>For privacy questions, contact:</p>
                     <div className="contact-info">
                         <p><strong>Nishanth Aradhya</strong></p>
+                        <p>ATS Resume Builder</p>
                         <p>Email: nishantharadhya7@gmail.com</p>
                     </div>
                 </section>
