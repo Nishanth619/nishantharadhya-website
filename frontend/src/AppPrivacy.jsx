@@ -818,50 +818,58 @@ const ATSAPrivacy = ({ navigate }) => {
                 </section>
 
                 <section className="terms-section">
+                    <div className="section-icon"><CreditCard size={24} /></div>
+                    <h2>3. Subscriptions and In-App Purchases</h2>
+                    <p>ATS.ai offers optional paid subscriptions (Monthly, Yearly, and Lifetime) that unlock Pro features. All payments are securely processed by Google Play. We do not collect, store, or have access to your payment card information.</p>
+                    <p>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period. You can manage or cancel your subscription anytime through your Google Play account settings.</p>
+                    <p>For refund requests, please contact Google Play support as all billing is handled by them.</p>
+                </section>
+
+                <section className="terms-section">
                     <div className="section-icon"><AlertCircle size={24} /></div>
-                    <h2>3. AI Processing and Content Responsibility</h2>
+                    <h2>4. AI Processing and Content Responsibility</h2>
                     <p>The Service uses AI to assist with document writing. AI outputs may be inaccurate or inappropriate. You are responsible for reviewing, editing, and verifying all AI-generated content before using it in job applications.</p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon"><Users size={24} /></div>
-                    <h2>4. How We Share Information</h2>
+                    <h2>5. How We Share Information</h2>
                     <p>We share information with service providers including: Google Firebase, Google Mobile Ads (AdMob), Google Play Billing, RevenueCat, and AI providers (Google Gemini, Groq).</p>
                     <p>If you choose to export or share a resume, the information is shared with the apps or services you select.</p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon"><ShieldCheck size={24} /></div>
-                    <h2>5. Data Security</h2>
+                    <h2>6. Data Security</h2>
                     <p>We use reasonable technical measures to protect information, including HTTPS, Firebase security rules, and authentication. No method of storage or transmission is 100% secure.</p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon"><Wifi size={24} /></div>
-                    <h2>6. Data Retention</h2>
+                    <h2>7. Data Retention</h2>
                     <p>We retain information as long as needed to provide the Service. Account records and resume data are kept until you delete them or request account deletion.</p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon"><AlertCircle size={24} /></div>
-                    <h2>7. Deleting Your Information and Account</h2>
+                    <h2>8. Deleting Your Information and Account</h2>
                     <p>To request deletion of your account and associated app data, use the account deletion page at: <a href="/delete-account/atsai">https://www.nexaaradhya.site/delete-account/atsai</a></p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon"><Globe size={24} /></div>
-                    <h2>8. Your Choices</h2>
+                    <h2>9. Your Choices</h2>
                     <p>You can choose whether to create an account, manage ad personalization, and decline optional permissions. You can also request access, correction, or deletion by contacting us.</p>
                 </section>
 
                 <section className="terms-section">
-                    <h2>9. Children's Privacy</h2>
+                    <h2>10. Children's Privacy</h2>
                     <p>ATS Resume Builder is intended for professional use and is not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon"><Globe size={24} /></div>
-                    <h2>10. International Users</h2>
+                    <h2>11. International Users</h2>
                     <p>Your information may be processed in countries other than where you live, which may have different data protection laws.</p>
                 </section>
 
