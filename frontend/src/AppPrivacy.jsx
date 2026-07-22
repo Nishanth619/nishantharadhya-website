@@ -61,69 +61,6 @@ const appData = {
         ],
         permissions: ["Camera access for capturing frames", "Storage access to save animations"]
     },
-import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Shield, Eye, Database, Lock, Bell, Users, Globe, AlertCircle, Wifi, FileText, CreditCard, ShieldCheck, Mail } from 'lucide-react';
-import './Terms.css';
-
-// App-specific data
-const appData = {
-    pdfhub: {
-        name: "PDF Hub",
-        icon: "📑",
-        description: "PDF management application",
-        dataCollection: [
-            "No personal documents are collected or stored",
-            "PDF processing happens entirely on your device",
-            "We cannot access the content of your files"
-        ],
-        permissions: ["Storage access to read and save PDF files"]
-    },
-    pdfgen: {
-        name: "PDF Gen",
-        icon: "📄",
-        description: "PDF creation and conversion application",
-        isDetailed: true
-    },
-    smartzip: {
-        name: "SmartZip",
-        icon: "📦",
-        description: "File compression and extraction application",
-        dataCollection: [
-            "No files are uploaded or stored externally",
-            "Compression happens entirely on your device",
-            "We cannot see your file contents"
-        ],
-        permissions: ["Storage access to read and write files"]
-    },
-    focushub: {
-        name: "FocusHub",
-        icon: "🎯",
-        description: "Focus timer and productivity application",
-        dataCollection: [
-            "Focus session data is stored only on your device",
-            "We do not collect or share productivity statistics",
-            "No account or login required"
-        ],
-        permissions: ["Notification access for timer alerts"]
-    },
-    neartransfer: {
-        name: "NearTransfer",
-        icon: "📲",
-        description: "cross-platform file sharing application that enables seamless file transfers between Android and Windows devices over the same WiFi network",
-        isDetailed: true
-    },
-    novacraft: {
-        name: "NovaCraft Studio",
-        icon: "🎬",
-        description: "Stop motion animation application",
-        dataCollection: [
-            "Animations are stored only on your device",
-            "We do not access your creative projects",
-            "No cloud sync or upload features"
-        ],
-        permissions: ["Camera access for capturing frames", "Storage access to save animations"]
-    },
     geocam: {
         name: "Geocam Pro",
         icon: "📸",
@@ -941,6 +878,172 @@ const ATSAPrivacy = ({ navigate }) => {
                     <h2>11. International Users</h2>
                     <p>Your information may be processed in countries other than where you live, which may have different data protection laws.</p>
                 </section>
+
+                <section className="terms-section contact-section">
+                    <div className="section-icon"><Mail size={24} /></div>
+                    <h2>Contact Us</h2>
+                    <p>For privacy questions, contact:</p>
+                    <div className="contact-info">
+                        <p><strong>Nishanth Aradhya</strong></p>
+                        <p>ATS Resume Builder</p>
+                        <p>Email: nishantharadhya7@gmail.com</p>
+                    </div>
+                </section>
+            </div>
+
+            <div className="terms-footer">
+                <p>© 2026 Ats.Ai. All rights reserved.</p>
+            </div>
+        </div>
+    );
+};
+
+// Detailed OurVerse Privacy Policy Component
+const OurVersePrivacy = ({ navigate }) => {
+    return (
+        <div className="terms-container" data-theme="dark">
+            <div className="terms-header">
+                <button className="back-button" onClick={() => navigate('/')}>
+                    <ArrowLeft size={20} />
+                    <span>Back to Home</span>
+                </button>
+                <div className="terms-title-section">
+                    <Shield className="terms-icon" size={40} />
+                    <h1>🌌 OurVerse - Privacy Policy</h1>
+                    <p className="last-updated">Effective Date: July 22, 2026</p>
+                </div>
+            </div>
+
+            <div className="terms-content">
+                <p>OurVerse ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by our mobile application (the "App").</p>
+                <p>By downloading and using the App, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Database size={24} /></div>
+                    <h2>1. Information We Collect</h2>
+                    <h3>A. Information You Provide to Us</h3>
+                    <p><strong>User-Generated Content:</strong> To provide the core features of the App (such as "Doodle with Me", "Flash", "Would You Rather", and chat), we collect the text, images, drawings, and interactions you create and share with your partner/space members.</p>
+                    <p><strong>Account Data:</strong> If you use phone, email, or anonymous authentication, we collect identifiers required to create and secure your "Space".</p>
+                    <h3>B. Information Collected Automatically</h3>
+                    <p><strong>Device Information:</strong> We collect device-specific information (such as hardware model, operating system version, unique device identifiers, and mobile network information) to ensure the App functions correctly.</p>
+                    <p><strong>Usage Data:</strong> We collect diagnostic and performance data, including crash logs and app interaction metrics.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Shield size={24} /></div>
+                    <h2>2. Device Permissions</h2>
+                    <p>The App requires certain device permissions to function. We only access these permissions when you use the relevant feature:</p>
+                    <ul>
+                        <li><strong>Camera:</strong> Required for the "Flash" mini-game to capture photos.</li>
+                        <li><strong>Microphone:</strong> Required for "Voice Calling" and "Streaming" features to transmit audio.</li>
+                        <li><strong>Photo Library & Storage:</strong> Required to select and upload existing photos for games, and to pick local audio files from your device for the "Vibe Together" synced music feature.</li>
+                        <li><strong>Notifications & Alarms:</strong> Required to send you updates, daily reminders, and incoming call alerts (including full-screen lock screen intents).</li>
+                        <li><strong>Bluetooth:</strong> Required to properly route audio to your Bluetooth headsets during voice calls.</li>
+                        <li><strong>Background & Foreground Services:</strong> We utilize foreground services to keep media playback, voice calls, and screen streaming active while the app is in the background.</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Lock size={24} /></div>
+                    <h2>3. How We Use Your Information</h2>
+                    <p>We use the collected information for various purposes:</p>
+                    <ul>
+                        <li>To provide, maintain, and improve the App's real-time synchronization features.</li>
+                        <li>To notify you about changes to our App or partner activities.</li>
+                        <li>To provide customer support.</li>
+                        <li>To detect, prevent, and address technical issues.</li>
+                        <li>To serve personalized advertisements (via Google AdMob).</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Globe size={24} /></div>
+                    <h2>4. Third-Party Services</h2>
+                    <p>The App utilizes third-party services that may collect information used to identify you. By using the App, you also agree to the privacy policies of these third-party service providers:</p>
+                    <ul>
+                        <li><strong>Google Play Services:</strong> Google Privacy Policy</li>
+                        <li><strong>Firebase & Google Analytics for Firebase:</strong> Used for database storage, real-time syncing, authentication, and crash reporting. Firebase Privacy Policy</li>
+                        <li><strong>Vercel:</strong> Our custom backend APIs are hosted on Vercel. We transmit temporary access tokens and notification requests through these servers. Vercel Privacy Policy</li>
+                        <li><strong>Agora:</strong> The Voice Calling and Streaming features utilize the Agora SDK for real-time communication. Audio data is processed by Agora's servers to facilitate the connection. Agora Privacy Policy</li>
+                        <li><strong>Google AdMob:</strong> Used to serve interstitial advertisements. AdMob may use device identifiers and cookies to personalize ads. Google AdMob Policy</li>
+                        <li><strong>YouTube API Services:</strong> The "Watch Together" feature uses YouTube API Services to sync videos. By using this feature, you agree to be bound by the YouTube Terms of Service and acknowledge the Google Privacy Policy.</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><AlertCircle size={24} /></div>
+                    <h2>5. Data Retention and Deletion</h2>
+                    <p>We retain your data only for as long as is necessary for the purposes set out in this Privacy Policy. <strong>Data Deletion:</strong> You have the right to request the deletion of your data. You can delete your "Space" directly within the App settings, which will permanently remove your user-generated content, chat logs, and associated media from our active servers.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><ShieldCheck size={24} /></div>
+                    <h2>6. Security of Data</h2>
+                    <p>The security of your data is important to us. We use industry-standard encryption (such as HTTPS/TLS) to transmit data between your device and our backend services (Firebase). However, remember that no method of transmission over the internet or method of electronic storage is 100% secure.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Users size={24} /></div>
+                    <h2>7. Children's Privacy</h2>
+                    <p>Our App does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us. If we become aware that we have collected personal data from children without verification of parental consent, we take steps to remove that information from our servers.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Eye size={24} /></div>
+                    <h2>8. Changes to This Privacy Policy</h2>
+                    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top. You are advised to review this Privacy Policy periodically for any changes.</p>
+                </section>
+
+                <section className="terms-section contact-section">
+                    <div className="section-icon"><Mail size={24} /></div>
+                    <h2>9. Contact Us</h2>
+                    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+                    <div className="contact-info">
+                        <p><strong>Email:</strong> nishantharadhya0@gmail.com</p>
+                    </div>
+                </section>
+            </div>
+
+            <div className="terms-footer">
+                <p>© 2026 OurVerse. All rights reserved.</p>
+            </div>
+        </div>
+    );
+};
+
+const AppPrivacy = () => {
+    const { appId } = useParams();
+    const navigate = useNavigate();
+    const app = appData[appId];
+
+    // Use detailed NearTransfer privacy policy
+    if (appId === 'neartransfer') {
+        return <NearTransferPrivacy navigate={navigate} />;
+    }
+
+    // Use detailed PDFGen privacy policy
+    if (appId === 'pdfgen') {
+        return <PDFGenPrivacy navigate={navigate} />;
+    }
+
+    // Use detailed Geocam privacy policy
+    if (appId === 'geocam') {
+        return <GeocamPrivacy navigate={navigate} />;
+    }
+
+    // Use detailed ATSAI privacy policy
+    if (appId === 'atsai') {
+        return <ATSAPrivacy navigate={navigate} />;
+    }
+
+    // Use detailed OurVerse privacy policy
+    if (appId === 'ourverse') {
+        return <OurVersePrivacy navigate={navigate} />;
+    }
+
+    if (!app) {
+        return (
+            <div className="terms-container" data-theme="dark">
                 <div className="terms-header">
                     <button className="back-button" onClick={() => navigate('/')}>
                         <ArrowLeft size={20} />
