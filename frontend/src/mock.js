@@ -115,6 +115,20 @@ export const apps = [
     features: ["GPS Location Overlay", "Magnetic Compass", "Tactical Map Styles", "Field Data Export"],
     status: "published",
     appId: "geocam"
+  },
+  {
+    id: 9,
+    name: "OurVerse",
+    description: "Real-time synchronization space for partners with shared doodles, mini-games, voice calling, and synced music.",
+    category: "Social",
+    downloadLink: "#",
+    icon: "🌌",
+    screenshot: "/screenshots/ourverse.jpg",
+    rating: 4.9,
+    downloads: "Coming Soon",
+    features: ["Doodle with Me", "Flash Mini-game", "Voice Calling", "Sync Music"],
+    status: "coming_soon",
+    appId: "ourverse"
   }
 ];
 

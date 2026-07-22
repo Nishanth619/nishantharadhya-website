@@ -61,6 +61,69 @@ const appData = {
         ],
         permissions: ["Camera access for capturing frames", "Storage access to save animations"]
     },
+import React from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { ArrowLeft, Shield, Eye, Database, Lock, Bell, Users, Globe, AlertCircle, Wifi, FileText, CreditCard, ShieldCheck, Mail } from 'lucide-react';
+import './Terms.css';
+
+// App-specific data
+const appData = {
+    pdfhub: {
+        name: "PDF Hub",
+        icon: "📑",
+        description: "PDF management application",
+        dataCollection: [
+            "No personal documents are collected or stored",
+            "PDF processing happens entirely on your device",
+            "We cannot access the content of your files"
+        ],
+        permissions: ["Storage access to read and save PDF files"]
+    },
+    pdfgen: {
+        name: "PDF Gen",
+        icon: "📄",
+        description: "PDF creation and conversion application",
+        isDetailed: true
+    },
+    smartzip: {
+        name: "SmartZip",
+        icon: "📦",
+        description: "File compression and extraction application",
+        dataCollection: [
+            "No files are uploaded or stored externally",
+            "Compression happens entirely on your device",
+            "We cannot see your file contents"
+        ],
+        permissions: ["Storage access to read and write files"]
+    },
+    focushub: {
+        name: "FocusHub",
+        icon: "🎯",
+        description: "Focus timer and productivity application",
+        dataCollection: [
+            "Focus session data is stored only on your device",
+            "We do not collect or share productivity statistics",
+            "No account or login required"
+        ],
+        permissions: ["Notification access for timer alerts"]
+    },
+    neartransfer: {
+        name: "NearTransfer",
+        icon: "📲",
+        description: "cross-platform file sharing application that enables seamless file transfers between Android and Windows devices over the same WiFi network",
+        isDetailed: true
+    },
+    novacraft: {
+        name: "NovaCraft Studio",
+        icon: "🎬",
+        description: "Stop motion animation application",
+        dataCollection: [
+            "Animations are stored only on your device",
+            "We do not access your creative projects",
+            "No cloud sync or upload features"
+        ],
+        permissions: ["Camera access for capturing frames", "Storage access to save animations"]
+    },
     geocam: {
         name: "Geocam Pro",
         icon: "📸",
@@ -71,6 +134,12 @@ const appData = {
         name: "Ats.Ai",
         icon: "🤖",
         description: "AI-powered resume builder and ATS score checker",
+        isDetailed: true
+    },
+    ourverse: {
+        name: "OurVerse",
+        icon: "🌌",
+        description: "Real-time synchronization space for partners with shared doodles, mini-games, voice calling, and synced music.",
         isDetailed: true
     }
 };
@@ -872,55 +941,6 @@ const ATSAPrivacy = ({ navigate }) => {
                     <h2>11. International Users</h2>
                     <p>Your information may be processed in countries other than where you live, which may have different data protection laws.</p>
                 </section>
-
-                <section className="terms-section contact-section">
-                    <div className="section-icon"><Mail size={24} /></div>
-                    <h2>Contact Us</h2>
-                    <p>For privacy questions, contact:</p>
-                    <div className="contact-info">
-                        <p><strong>Nishanth Aradhya</strong></p>
-                        <p>ATS Resume Builder</p>
-                        <p>Email: nishantharadhya7@gmail.com</p>
-                    </div>
-                </section>
-            </div>
-
-            <div className="terms-footer">
-                <p>© 2026 Ats.Ai. All rights reserved.</p>
-            </div>
-        </div>
-    );
-};
-
-const AppPrivacy = () => {
-    const { appId } = useParams();
-    const navigate = useNavigate();
-    const app = appData[appId];
-
-    // Use detailed NearTransfer privacy policy
-    if (appId === 'neartransfer') {
-        return <NearTransferPrivacy navigate={navigate} />;
-    }
-
-    // Use detailed PDFGen privacy policy
-    if (appId === 'pdfgen') {
-        return <PDFGenPrivacy navigate={navigate} />;
-    }
-
-    // Use detailed Geocam privacy policy
-    if (appId === 'geocam') {
-        return <GeocamPrivacy navigate={navigate} />;
-    }
-
-    // Use detailed ATSAI privacy policy
-    if (appId === 'atsai') {
-        return <ATSAPrivacy navigate={navigate} />;
-    }
-
-
-    if (!app) {
-        return (
-            <div className="terms-container" data-theme="dark">
                 <div className="terms-header">
                     <button className="back-button" onClick={() => navigate('/')}>
                         <ArrowLeft size={20} />

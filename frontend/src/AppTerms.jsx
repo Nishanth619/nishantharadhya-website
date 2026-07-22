@@ -68,6 +68,12 @@ const appData = {
         icon: "🤖",
         description: "AI-powered resume builder and ATS score checker",
         isDetailed: true
+    },
+    ourverse: {
+        name: "OurVerse",
+        icon: "🌌",
+        description: "Real-time synchronization space for partners",
+        isDetailed: true
     }
 };
 
@@ -1036,6 +1042,111 @@ const ATSATerms = ({ navigate }) => {
     );
 };
 
+// Detailed OurVerse Terms Component
+const OurVerseTerms = ({ navigate }) => {
+    return (
+        <div className="terms-container" data-theme="dark">
+            <div className="terms-header">
+                <button className="back-button" onClick={() => navigate('/')}>
+                    <ArrowLeft size={20} />
+                    <span>Back to Home</span>
+                </button>
+                <div className="terms-title-section">
+                    <FileText className="terms-icon" size={40} />
+                    <h1>🌌 OurVerse - Terms and Conditions</h1>
+                    <p className="last-updated">Effective Date: July 22, 2026</p>
+                </div>
+            </div>
+
+            <div className="terms-content">
+                <p>Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the OurVerse mobile application (the "App") operated by us.</p>
+                <p>Your access to and use of the App is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the App. By accessing or using the App you agree to be bound by these Terms.</p>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Shield size={24} /></div>
+                    <h2>1. Use of the App</h2>
+                    <ul>
+                        <li><strong>Eligibility:</strong> You must be at least 13 years old to use the App.</li>
+                        <li><strong>Account Security:</strong> You are responsible for safeguarding the invite codes and access to your "Space". You agree not to disclose your Space code to unauthorized third parties.</li>
+                        <li><strong>Acceptable Use:</strong> You agree to use the App only for lawful purposes. You must not use the App to transmit any content that is abusive, harassing, defamatory, obscene, fraudulent, or otherwise objectionable.</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><FileText size={24} /></div>
+                    <h2>2. User-Generated Content</h2>
+                    <p>Our App allows you to post, link, store, share, and otherwise make available certain information, text, graphics, videos, or other material ("Content"). You are responsible for the Content that you post to the App, including its legality, reliability, and appropriateness. We reserve the right, but not the obligation, to monitor and remove any Content or user Space that violates these Terms or is otherwise deemed inappropriate.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Globe size={24} /></div>
+                    <h2>3. Third-Party Services</h2>
+                    <p>The App integrates with various third-party services to provide certain features. By using these features, you also agree to the respective third-party terms:</p>
+                    <ul>
+                        <li><strong>YouTube:</strong> The "Watch Together" feature utilizes YouTube API Services. By using this feature, you agree to be bound by the YouTube Terms of Service.</li>
+                        <li><strong>Agora:</strong> By using the Voice Calling or Streaming features, you agree to comply with Agora's terms and Acceptable Use Policies.</li>
+                        <li><strong>Advertisements:</strong> We use Google AdMob to display ads. You acknowledge that third-party ad networks may collect data as outlined in our Privacy Policy.</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Lock size={24} /></div>
+                    <h2>4. Intellectual Property</h2>
+                    <p>The App and its original content (excluding User-Generated Content), features, and functionality are and will remain the exclusive property of our development team and its licensors. The App is protected by copyright, trademark, and other laws of both your country and foreign countries.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><AlertCircle size={24} /></div>
+                    <h2>5. Disclaimer of Warranties</h2>
+                    <p>The App is provided on an "AS IS" and "AS AVAILABLE" basis. We make no representations or warranties of any kind, express or implied, regarding the operation of the App or the information, content, or materials included in it. We do not warrant that the App will function uninterrupted, secure, or available at any particular time or location, or that any errors or defects will be corrected.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><AlertCircle size={24} /></div>
+                    <h2>6. Limitation of Liability</h2>
+                    <p>In no event shall we, our developers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:</p>
+                    <ul>
+                        <li>Your access to or use of or inability to access or use the App.</li>
+                        <li>Any conduct or content of any third party on the App.</li>
+                        <li>Any unauthorized access, use, or alteration of your transmissions or content.</li>
+                    </ul>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Shield size={24} /></div>
+                    <h2>7. Termination</h2>
+                    <p>We may terminate or suspend your access to the App immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. Upon termination, your right to use the App will immediately cease.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Scale size={24} /></div>
+                    <h2>8. Governing Law</h2>
+                    <p>These Terms shall be governed and construed in accordance with the laws of India, without regard to its conflict of law provisions.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><FileText size={24} /></div>
+                    <h2>9. Changes to Terms</h2>
+                    <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By continuing to access or use our App after those revisions become effective, you agree to be bound by the revised terms.</p>
+                </section>
+
+                <section className="terms-section contact-section">
+                    <div className="section-icon"><Mail size={24} /></div>
+                    <h2>10. Contact Us</h2>
+                    <p>If you have any questions about these Terms, please contact us at:</p>
+                    <div className="contact-info">
+                        <p><strong>Email:</strong> nishantharadhya0@gmail.com</p>
+                    </div>
+                </section>
+            </div>
+
+            <div className="terms-footer">
+                <p>© 2026 OurVerse. All rights reserved.</p>
+            </div>
+        </div>
+    );
+};
+
 const AppTerms = () => {
     const { appId } = useParams();
     const navigate = useNavigate();
@@ -1059,6 +1170,11 @@ const AppTerms = () => {
     // Use detailed ATSAI terms
     if (appId === 'atsai') {
         return <ATSATerms navigate={navigate} />;
+    }
+
+    // Use detailed OurVerse terms
+    if (appId === 'ourverse') {
+        return <OurVerseTerms navigate={navigate} />;
     }
 
     if (!app) {

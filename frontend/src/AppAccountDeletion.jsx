@@ -34,6 +34,32 @@ const appData = {
             'Account deletion is permanent once processed.',
         ],
     },
+    ourverse: {
+        name: 'OurVerse',
+        icon: '🌌',
+        email: 'nishantharadhya0@gmail.com',
+        hasAccount: true,
+        steps: [
+            'Open the OurVerse app on your device.',
+            'Navigate to the App settings.',
+            'Select the option to delete your "Space".',
+            'Alternatively, you can send an email to nishantharadhya0@gmail.com with the subject "Account Deletion Request".'
+        ],
+        dataDeleted: [
+            'User-generated content (text, images, drawings)',
+            'Chat logs',
+            'Associated media',
+            'Your "Space" and account identifiers'
+        ],
+        dataRetained: [
+            'Aggregated, anonymous usage analytics',
+            'Security logs to prevent abuse'
+        ],
+        notes: [
+            'Deleting your Space directly in the app permanently removes your data from our active servers.',
+            'Email requests may take up to 30 days to process.'
+        ],
+    },
     neartransfer: {
         name: 'NearTransfer',
         icon: '📲',
