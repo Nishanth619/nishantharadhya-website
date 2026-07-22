@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, FileText, Shield, Scale, Mail, AlertCircle, Lock } from 'lucide-react';
+import { ArrowLeft, FileText, Shield, Scale, Mail, AlertCircle, Lock, Globe } from 'lucide-react';
 import './Terms.css';
 
 // App-specific data
