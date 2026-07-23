@@ -971,32 +971,38 @@ const OurVersePrivacy = ({ navigate }) => {
                 </section>
 
                 <section className="terms-section">
+                    <div className="section-icon"><CreditCard size={24} /></div>
+                    <h2>5. Payments and Subscriptions</h2>
+                    <p>We offer in-app purchases and subscriptions. All payment processing is handled securely by third-party payment processors (such as Google Play Billing). We do not process, collect, or store your full credit card information or banking details on our servers. Your payment information is subject to the privacy policy and terms of the payment processor. We only receive a secure token and purchase status to grant you access to premium features.</p>
+                </section>
+
+                <section className="terms-section">
                     <div className="section-icon"><AlertCircle size={24} /></div>
-                    <h2>5. Data Retention and Deletion</h2>
+                    <h2>6. Data Retention and Deletion</h2>
                     <p>We retain your data only for as long as is necessary for the purposes set out in this Privacy Policy. <strong>Data Deletion:</strong> You have the right to request the deletion of your data. You can delete your "Space" directly within the App settings, which will permanently remove your user-generated content, chat logs, and associated media from our active servers.</p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon"><ShieldCheck size={24} /></div>
-                    <h2>6. Security of Data</h2>
+                    <h2>7. Security of Data</h2>
                     <p>The security of your data is important to us. We use industry-standard encryption (such as HTTPS/TLS) to transmit data between your device and our backend services (Firebase). However, remember that no method of transmission over the internet or method of electronic storage is 100% secure.</p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon"><Users size={24} /></div>
-                    <h2>7. Children's Privacy</h2>
+                    <h2>8. Children's Privacy</h2>
                     <p>Our App does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us. If we become aware that we have collected personal data from children without verification of parental consent, we take steps to remove that information from our servers.</p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon"><Eye size={24} /></div>
-                    <h2>8. Changes to This Privacy Policy</h2>
+                    <h2>9. Changes to This Privacy Policy</h2>
                     <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top. You are advised to review this Privacy Policy periodically for any changes.</p>
                 </section>
 
                 <section className="terms-section contact-section">
                     <div className="section-icon"><Mail size={24} /></div>
-                    <h2>9. Contact Us</h2>
+                    <h2>10. Contact Us</h2>
                     <p>If you have any questions about this Privacy Policy, please contact us at:</p>
                     <div className="contact-info">
                         <p><strong>Email:</strong> nishantharadhya0@gmail.com</p>
