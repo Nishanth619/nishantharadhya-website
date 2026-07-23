@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, FileText, Shield, Scale, Mail, AlertCircle, Lock, Globe, CreditCard } from 'lucide-react';
+import { ArrowLeft, FileText, Shield, Scale, Mail, AlertCircle, Lock, Globe, CreditCard, Users, Settings } from 'lucide-react';
 import './Terms.css';
 
 // App-specific data
@@ -70,7 +70,7 @@ const appData = {
         isDetailed: true
     },
     ourverse: {
-        name: "OurVerse",
+        name: "Ourverse",
         icon: "🌌",
         description: "Real-time synchronization space for partners",
         isDetailed: true
@@ -1053,13 +1053,13 @@ const OurVerseTerms = ({ navigate }) => {
                 </button>
                 <div className="terms-title-section">
                     <FileText className="terms-icon" size={40} />
-                    <h1>🌌 OurVerse - Terms and Conditions</h1>
+                    <h1>🌌 Ourverse - Terms and Conditions</h1>
                     <p className="last-updated">Effective Date: July 22, 2026</p>
                 </div>
             </div>
 
             <div className="terms-content">
-                <p>Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the OurVerse mobile application (the "App") operated by us.</p>
+                <p>Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the Ourverse mobile application (the "App") operated by us.</p>
                 <p>Your access to and use of the App is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the App. By accessing or using the App you agree to be bound by these Terms.</p>
 
                 <section className="terms-section">
@@ -1079,8 +1079,20 @@ const OurVerseTerms = ({ navigate }) => {
                 </section>
 
                 <section className="terms-section">
+                    <div className="section-icon"><Users size={24} /></div>
+                    <h2>3. User Conduct in Shared Spaces</h2>
+                    <p>Ourverse allows users to create shared environments with multiple friends. By participating in these shared Spaces, you agree not to post, share, or transmit any content that is abusive, harassing, defamatory, explicit, or otherwise violates the rights of others. We reserve the right to terminate accounts or dissolve Spaces that violate these community guidelines.</p>
+                </section>
+
+                <section className="terms-section">
+                    <div className="section-icon"><Settings size={24} /></div>
+                    <h2>4. Space Administration</h2>
+                    <p>The creator of a Space holds administrative privileges for that specific environment. Administrators reserve the right to remove members or delete the Space entirely at their sole discretion. Ourverse is not responsible for mediating personal disputes between members of a shared Space.</p>
+                </section>
+
+                <section className="terms-section">
                     <div className="section-icon"><Globe size={24} /></div>
-                    <h2>3. Third-Party Services</h2>
+                    <h2>5. Third-Party Services</h2>
                     <p>The App integrates with various third-party services to provide certain features. By using these features, you also agree to the respective third-party terms:</p>
                     <ul>
                         <li><strong>YouTube:</strong> The "Watch Together" feature utilizes YouTube API Services. By using this feature, you agree to be bound by the YouTube Terms of Service.</li>
@@ -1091,14 +1103,14 @@ const OurVerseTerms = ({ navigate }) => {
 
                 <section className="terms-section">
                     <div className="section-icon"><Lock size={24} /></div>
-                    <h2>4. Intellectual Property</h2>
+                    <h2>6. Intellectual Property</h2>
                     <p>The App and its original content (excluding User-Generated Content), features, and functionality are and will remain the exclusive property of our development team and its licensors. The App is protected by copyright, trademark, and other laws of both your country and foreign countries.</p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon"><CreditCard size={24} /></div>
-                    <h2>5. Subscriptions, Auto-Renewal, and Refunds</h2>
-                    <p>OurVerse offers premium subscription plans. If you choose to subscribe, payment will be charged to your Google Play account at confirmation of purchase.</p>
+                    <h2>7. Subscriptions, Auto-Renewal, and Refunds</h2>
+                    <p>Ourverse offers premium subscription plans. If you choose to subscribe, payment will be charged to your Google Play account at confirmation of purchase.</p>
                     <p><strong>Auto-Renewal:</strong> Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period. Your account will be charged for renewal within 24 hours prior to the end of the current period at the original subscription price.</p>
                     <p><strong>Cancellation:</strong> You can manage and cancel your subscriptions at any time by going to your Google Play Store account settings after purchase. Cancelling a subscription does not grant a refund for the current billing period, but you will retain premium access until the period ends.</p>
                     <p><strong>Refunds:</strong> All in-app purchases and subscriptions are final and non-refundable, except where required by law or solely at the discretion of the app store provider.</p>
@@ -1106,13 +1118,13 @@ const OurVerseTerms = ({ navigate }) => {
 
                 <section className="terms-section">
                     <div className="section-icon"><AlertCircle size={24} /></div>
-                    <h2>6. Disclaimer of Warranties</h2>
+                    <h2>8. Disclaimer of Warranties</h2>
                     <p>The App is provided on an "AS IS" and "AS AVAILABLE" basis. We make no representations or warranties of any kind, express or implied, regarding the operation of the App or the information, content, or materials included in it. We do not warrant that the App will function uninterrupted, secure, or available at any particular time or location, or that any errors or defects will be corrected.</p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon"><AlertCircle size={24} /></div>
-                    <h2>7. Limitation of Liability</h2>
+                    <h2>9. Limitation of Liability</h2>
                     <p>In no event shall we, our developers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:</p>
                     <ul>
                         <li>Your access to or use of or inability to access or use the App.</li>
@@ -1123,25 +1135,25 @@ const OurVerseTerms = ({ navigate }) => {
 
                 <section className="terms-section">
                     <div className="section-icon"><Shield size={24} /></div>
-                    <h2>8. Termination</h2>
+                    <h2>10. Termination</h2>
                     <p>We may terminate or suspend your access to the App immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. Upon termination, your right to use the App will immediately cease.</p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon"><Scale size={24} /></div>
-                    <h2>9. Governing Law</h2>
+                    <h2>11. Governing Law</h2>
                     <p>These Terms shall be governed and construed in accordance with the laws of India, without regard to its conflict of law provisions.</p>
                 </section>
 
                 <section className="terms-section">
                     <div className="section-icon"><FileText size={24} /></div>
-                    <h2>10. Changes to Terms</h2>
+                    <h2>12. Changes to Terms</h2>
                     <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By continuing to access or use our App after those revisions become effective, you agree to be bound by the revised terms.</p>
                 </section>
 
                 <section className="terms-section contact-section">
                     <div className="section-icon"><Mail size={24} /></div>
-                    <h2>11. Contact Us</h2>
+                    <h2>13. Contact Us</h2>
                     <p>If you have any questions about these Terms, please contact us at:</p>
                     <div className="contact-info">
                         <p><strong>Email:</strong> nishantharadhya0@gmail.com</p>
@@ -1150,7 +1162,7 @@ const OurVerseTerms = ({ navigate }) => {
             </div>
 
             <div className="terms-footer">
-                <p>© 2026 OurVerse. All rights reserved.</p>
+                <p>© 2026 Ourverse. All rights reserved.</p>
             </div>
         </div>
     );

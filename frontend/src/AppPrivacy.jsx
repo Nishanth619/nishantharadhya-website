@@ -74,7 +74,7 @@ const appData = {
         isDetailed: true
     },
     ourverse: {
-        name: "OurVerse",
+        name: "Ourverse",
         icon: "🌌",
         description: "Real-time synchronization space for partners with shared doodles, mini-games, voice calling, and synced music.",
         isDetailed: true
@@ -909,20 +909,20 @@ const OurVersePrivacy = ({ navigate }) => {
                 </button>
                 <div className="terms-title-section">
                     <Shield className="terms-icon" size={40} />
-                    <h1>🌌 OurVerse - Privacy Policy</h1>
+                    <h1>🌌 Ourverse - Privacy Policy</h1>
                     <p className="last-updated">Effective Date: July 22, 2026</p>
                 </div>
             </div>
 
             <div className="terms-content">
-                <p>OurVerse ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by our mobile application (the "App").</p>
+                <p>Ourverse ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by our mobile application (the "App").</p>
                 <p>By downloading and using the App, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
 
                 <section className="terms-section">
                     <div className="section-icon"><Database size={24} /></div>
                     <h2>1. Information We Collect</h2>
                     <h3>A. Information You Provide to Us</h3>
-                    <p><strong>User-Generated Content:</strong> To provide the core features of the App (such as "Doodle with Me", "Flash", "Would You Rather", and chat), we collect the text, images, drawings, and interactions you create and share with your partner/space members.</p>
+                    <p><strong>User-Generated Content:</strong> To provide the core features of the App, we collect the text, images, drawings, and interactions you create. When you participate in a 'Friends Space', please be aware that any content, moods, or data you share is instantly visible to all active members of that specific space, not just a single partner.</p>
                     <p><strong>Account Data:</strong> If you use phone, email, or anonymous authentication, we collect identifiers required to create and secure your "Space".</p>
                     <h3>B. Information Collected Automatically</h3>
                     <p><strong>Device Information:</strong> We collect device-specific information (such as hardware model, operating system version, unique device identifiers, and mobile network information) to ensure the App functions correctly.</p>
@@ -980,6 +980,7 @@ const OurVersePrivacy = ({ navigate }) => {
                     <div className="section-icon"><AlertCircle size={24} /></div>
                     <h2>6. Data Retention and Deletion</h2>
                     <p>We retain your data only for as long as is necessary for the purposes set out in this Privacy Policy. <strong>Data Deletion:</strong> You have the right to request the deletion of your data. You can delete your "Space" directly within the App settings, which will permanently remove your user-generated content, chat logs, and associated media from our active servers.</p>
+                    <p><strong>Leaving a Shared Space:</strong> If you choose to leave a multi-member 'Friends Space', your direct account connection to that space is severed. However, past user-generated content (such as historical chat logs or saved game scores) may remain visible to the remaining members of that space to preserve the context of past group interactions.</p>
                 </section>
 
                 <section className="terms-section">
@@ -1011,7 +1012,7 @@ const OurVersePrivacy = ({ navigate }) => {
             </div>
 
             <div className="terms-footer">
-                <p>© 2026 OurVerse. All rights reserved.</p>
+                <p>© 2026 Ourverse. All rights reserved.</p>
             </div>
         </div>
     );
